@@ -8,3 +8,9 @@ This repo has some simple CSS and JS files to implement Canon styling and overri
 2. Navigate to Jenkins > configuration > Theme
 3. Set _URL of theme CSS_ to `http://raw.dev.website.rackspace.com/rswebteam/canon-jenkins/raw/master/style.css` (or another URL of your setting/choosing)
 4. Set _URL of theme JS_ to `http://raw.dev.website.rackspace.com/rswebteam/canon-jenkins/raw/master/app.js` (or another URL of your setting/choosing)
+
+## Pro Tips
+
+### If Jenkins blows up using these URLs
+
+Remove settings from `$JENKINS_HOME/org.codefirst.SimpleThemeDecorator.xml`
