@@ -10,6 +10,7 @@ window.onload = function() {
 	jQuery('#main-table').wrap('<div id="main-table-wrap" />');
 	jQuery('#main-table').removeAttr('style');
 	jQuery('#main-table tbody').first().prepend('<tr><td colspan="2" id="rackspace-logo"></td></tr>');
+	jQuery('.behavior-loading').hide();
 	jQuery('body').show();
 };
 
