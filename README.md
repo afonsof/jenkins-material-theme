@@ -1,6 +1,6 @@
 # Canon for Jenkins
 
-This repo has some simple CSS and JS files to implement Canon styling and overrides for Jenkins CI.
+CSS and JS to implement [Rackspace Canon](http://canon.rackspace.com/) as a theme for [Jenkins CI](http://jenkins-ci.org/).
 
 ## Usage
 
