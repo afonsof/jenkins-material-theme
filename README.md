@@ -2,6 +2,8 @@
 
 CSS and JS to implement [Rackspace Canon](http://canon.rackspace.com/) as a theme for [Jenkins CI](http://jenkins-ci.org/).
 
+![Example](Canon-Jenkins-Screenshot "Example")
+
 ## Usage
 
 1. Install the [Simple Theme Plugin for Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin)
