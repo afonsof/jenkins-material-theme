@@ -11,6 +11,9 @@
     "jenkins"
   ],
   "author": "David Porter",
+  "contributors" : [
+      "Brady Vitrano"
+  ],
   "license": "BSD",
   "devDependencies": {
     "grunt": "~0.4.1",
