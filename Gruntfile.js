@@ -11,19 +11,9 @@ module.exports = function(grunt) {
                 report: 'min'
             },
             build : {
-
-            }
-        },
-        useminPrepare : {
-            html : 'index.html',
-            options : {
-                dest : 'build/'
-            }
-        },
-        usemin : {
-            html : ['build/index.html'],
-            options : {
-                basedir : '/'
+                files: {
+                    'build/output.min.js': ['app.js']
+                }
             }
         },
         copy : {
@@ -31,28 +21,47 @@ module.exports = function(grunt) {
                 files : [
                     {
                         src  : [
-                            'app/**/*.html',
-                            'index.html',
-                            'vendor/**/*',
-                            'css/**/*'
+                            'app.js',
+                            'style.css'
                         ],
                         dest : 'build/'
                     }
                 ]
             }
 
+        },
+        cssmin: {
+            minify: {
+                files: {
+                    'build/styles.css' : ['*.css']
+                }
+            }
+        },
+        clean: {
+            build: {
+                src: ["build/"]
+            }
+        },
+        rev: {
+            files: {
+                src: ['build/*.{js,css}']
+            }
+        },
+        jshint: {
+            files: ['*.js']
         }
-
     });
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-usemin');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-rev');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
     // Default task(s).
-    grunt.registerTask('default', ['useminPrepare','concat','copy','usemin','uglify']);
+    grunt.registerTask('default', ['clean', 'uglify', 'cssmin','rev','jshint']);
 
 
 };
