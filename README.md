@@ -4,6 +4,10 @@ CSS and JS to implement [Rackspace Canon](http://canon.rackspace.com/) as a them
 
 ![Example](Canon-Jenkins-Screenshot.png "Example")
 
+## Requirements
+* NodeJS
+* Grunt `npm install grunt -g`
+
 ## To Build
 ```
 npm install
