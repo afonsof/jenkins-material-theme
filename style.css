@@ -139,7 +139,8 @@ a.model-link.inside {
 	background-color: #00A96D !important;
 }
 
-#projectstatus td:first-child[data="12"] {
+#projectstatus td:first-child[data="12"],
+#projectstatus td:first-child[data="10"] {
 	background-color: #CCCCCC !important;
 }
 
