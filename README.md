@@ -4,6 +4,12 @@ CSS and JS to implement [Rackspace Canon](http://canon.rackspace.com/) as a them
 
 ![Example](Canon-Jenkins-Screenshot.png "Example")
 
+## To Build
+```
+npm install
+grunt
+```
+
 ## Usage
 
 1. Install the [Simple Theme Plugin for Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin)
