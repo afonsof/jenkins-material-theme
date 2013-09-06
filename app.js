@@ -1,5 +1,6 @@
 document.observe("dom:loaded", function() {
-	$('right-top-nav').insert($('login-field').innerHTML);
+	$('footer').insert($('right-top-nav').innerHTML);
+	$('right-top-nav').update($('login-field').innerHTML);
 	
 	tables = $$('body table');
 	tables[tables.length-1].toggleClassName('footer-table');
@@ -13,4 +14,3 @@ document.observe("dom:loaded", function() {
 		before: logoRow
 	});
 });
-

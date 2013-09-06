@@ -18,7 +18,8 @@ body {
 	display: none;
 }
 
-.top-sticker-inner,.footer-table {
+.top-sticker-inner,
+.footer-table {
 	background: none repeat scroll 0 0 #333333;
 	font-size: 12px;
 	min-height: 25px;
@@ -26,7 +27,9 @@ body {
 	height: auto !important;
 }
 
-.top-sticker-inner a,#right-top-nav a,.footer-table a {
+.top-sticker-inner a,
+#right-top-nav a,
+.footer-table a {
 	font-size: 12px !important;
 	color: #999999 !important;
 	font-weight: normal !important;
@@ -36,6 +39,11 @@ body {
 .top-sticker-inner a:hover,#right-top-nav a:hover,.footer-table a:hover
 	{
 	color: #CCCCCC !important;
+}
+
+#right-top-nav {
+	margin-left: 20px;
+	line-height: 20px !important;
 }
 
 #right-top-nav span {
@@ -96,8 +104,22 @@ a.model-link.inside {
 	font-weight: normal;
 }
 
+#projectstatus th:first-child {
+	padding: 0 !important;
+	width: 10px !important;
+}
+
+#projectstatus th:first-child * {
+	display: none;
+}
+
 #projectstatus th a:hover {
 	color: #666666;
+}
+
+#projectstatus td:first-child {
+	border-left: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
 }
 
 #projectstatus td:first-child img {
@@ -108,7 +130,8 @@ a.model-link.inside {
 	background-color: #C40022 !important;
 }
 
-#projectstatus td:first-child[data="1"] {
+#projectstatus td:first-child[data="1"],
+#projectstatus td:first-child[data="5"] {
 	background-image: url("https://0ffddf3700fca63d7eee-f2158e9965ca1e4dc7433839c207ae5c.ssl.cf1.rackcdn.com/site_media/images/progress-dark-yellow-status.gif") !important;
 }
 
@@ -116,10 +139,123 @@ a.model-link.inside {
 	background-color: #00A96D !important;
 }
 
-#projectstatus td:first-child[data="5"] {
-	background-image: url("https://0ffddf3700fca63d7eee-f2158e9965ca1e4dc7433839c207ae5c.ssl.cf1.rackcdn.com/site_media/images/progress-green-status.gif") !important;
-}
-
 #projectstatus td:first-child[data="12"] {
 	background-color: #CCCCCC !important;
+}
+
+table.progress-bar.red td.progress-bar-done {
+   background-color: #CC0000;
+   background-image: url("https://0ffddf3700fca63d7eee-f2158e9965ca1e4dc7433839c207ae5c.ssl.cf1.rackcdn.com/site_media/images/progress-dark-yellow-status.gif");
+   border: 1px solid #BBBBBB;
+}
+
+td.progress-bar-done {
+   background-color: #3465A4;
+   background-image: url("https://0ffddf3700fca63d7eee-f2158e9965ca1e4dc7433839c207ae5c.ssl.cf1.rackcdn.com/site_media/images/progress-green-status.gif") !important;
+   border: 1px solid #BBBBBB;
+}
+
+td.progress-bar-left {
+   border: 1px solid #BBBBBB;
+}
+
+.model-link,
+#side-panel a {
+	color: #1D71BF !important;
+	text-decoration: none !important;
+}
+
+.model-link:hover,
+#side-panel a:hover {
+	color: #1D71BF !important;
+	text-decoration: underline !important;
+}
+
+#menuSelector {
+   background-image: url("https://0ffddf3700fca63d7eee-f2158e9965ca1e4dc7433839c207ae5c.ssl.cf1.rackcdn.com/site_media/images/ck_icons/create-check.png") !important;
+}
+
+.bottom-sticker,
+#bottom-sticker {
+    width: 70%;
+}
+
+.bigtable tr {
+    border: 1px solid #DDDDDD;
+}
+
+#projectstatus td:last-child {
+    border-right: 1px solid #DDDDDD;
+}
+
+#viewList td.inactive,
+#viewList td.filler {
+	border-bottom: 1px solid #DDDDDD;
+}
+
+a.model-link.inside {
+   padding-right: 20px !important;
+}
+
+.yui-skin-sam .yuimenuitem-selected {
+	background-color: #FFFFFF !important;
+}
+
+.yui-skin-sam .yuimenuitem a {
+	color: #1D71BF !important;
+}
+
+.yui-skin-sam .yuimenuitemlabel-disabled, .yui-skin-sam .yuimenuitemlabel-disabled:visited {
+	color: #1D71BF !important;
+}
+
+.yui-button button{
+    background-color: #C5C5C5;
+    background-image: linear-gradient(#FFFFFF, #C5C5C5) !important;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Helvetica Neue",sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    padding: 2px 10px 1px;
+    text-align: center;
+    text-shadow: 0 1px 1px #FFFFFF;
+    vertical-align: middle;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea {
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    height: 25px;
+    padding: 1px 4px 2px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.setting-input {
+	width: 98%;
+}
+
+.yuimenu li a {
+   line-height: 1.8em;
+   cursor: pointer !important;
+}
+
+.yuimenu li a:hover {
+   background: #eee !important;
+}
+
+#buildHistory.pane {
+   background: white;
+}
+
+#viewList td.inactive:hover {
+   background-color: #CCCCCC;
+   color: #FFFFFF;
 }
