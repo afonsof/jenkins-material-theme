@@ -6,7 +6,7 @@ CSS and JS to implement [Rackspace Canon](http://canon.rackspace.com/) as a them
 
 ## Requirements
 * NodeJS
-* Grunt `npm install grunt -g`
+* Grunt `npm install grunt-cli -g`
 
 ## To Build
 ```
