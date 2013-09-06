@@ -13,12 +13,17 @@ grunt
 ## Usage
 
 1. Install the [Simple Theme Plugin for Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin)
-2. Navigate to Jenkins > configuration > Theme
-3. Set _URL of theme CSS_ to `http://raw.dev.website.rackspace.com/rswebteam/canon-jenkins/raw/master/style.css` (or another URL of your setting/choosing)
-4. Set _URL of theme JS_ to `http://raw.dev.website.rackspace.com/rswebteam/canon-jenkins/raw/master/app.js` (or another URL of your setting/choosing)
+2. Navigate to Jenkins > Manage Jenkins > Configure System > Theme
+3. Set _URL of theme CSS_ to `http://bd905956a42f6ed96c17-a6046798c661ed27e3d4fdfd1b3c5e5a.r62.cf1.rackcdn.com/canon-jenkins/styles.css` (or another URL of your setting/choosing)
+4. Set _URL of theme JS_ to `http://bd905956a42f6ed96c17-a6046798c661ed27e3d4fdfd1b3c5e5a.r62.cf1.rackcdn.com/canon-jenkins/app.min.js` (or another URL of your setting/choosing)
 
-## Pro Tips
+## Manual Reset of Simple Theme Files
 
-### If Jenkins blows up using these URLs
-
-Remove settings from `$JENKINS_HOME/org.codefirst.SimpleThemeDecorator.xml`
+Edit file: `$JENKINS_HOME/org.codefirst.SimpleThemeDecorator.xml`
+```
+<?xml version='1.0' encoding='UTF-8'?>
+<org.codefirst.SimpleThemeDecorator plugin="simple-theme-plugin@0.3">
+  <cssUrl>http://bd905956a42f6ed96c17-a6046798c661ed27e3d4fdfd1b3c5e5a.r62.cf1.rackcdn.com/canon-jenkins/styles.css</cssUrl>
+  <jsUrl>http://bd905956a42f6ed96c17-a6046798c661ed27e3d4fdfd1b3c5e5a.r62.cf1.rackcdn.com/canon-jenkins/app.min.js</jsUrl>
+</org.codefirst.SimpleThemeDecorator>
+```
