@@ -18,7 +18,7 @@ document.observe("dom:loaded", function () {
     // Wrap main table with wrapper div to provide textures background between header and footer
     $('main-table').wrap('div', { 'id': 'main-table-wrap' });
     // Clear style attribute for main table
-    $('main-table').style = null;
+    $('main-table').setStyle({background:"none"});
     // Create table row with Rackspace logo and search field cells
     var logoRow = new Element('tr').update('<td colspan="2" id="rackspace-logo"></td><td id="search-wrap"></td>');
     // Prepend logo row to main table body
