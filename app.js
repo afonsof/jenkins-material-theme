@@ -33,4 +33,6 @@ document.observe("dom:loaded", function () {
     searchbox.type = 'text';
     // Clear style attribute for search field
     searchbox.style = null;
+    // Click logo, go home.
+    $('rackspace-logo').on('click', function(){ location = '/'; });
 });
