@@ -4,30 +4,24 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.424</version>
+    <version>1.563</version>
   </parent>
 
-  <groupId>org.codefirst.jenkins.simplethemeplugin</groupId>
-  <artifactId>simple-theme-plugin</artifactId>
-  <version>0.4-SNAPSHOT</version>
+  <groupId>org.cloudbees.jenkins.simplecssplugin</groupId>
+  <artifactId>simple-css-plugin</artifactId>
+  <version>0.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
-  <name>Simple Theme Plugin</name>
-  <url>http://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin</url>
+  <name>Simple CSS Plugin</name>
+  <url>http://github.com/cloudbees/simple-css-plugin</url>
 
   <developers>
     <developer>
-      <id>mallowlabs</id>
-      <name>mallowlabs</name>
-      <email>mallowlabs@gmail.com</email>
+      <id>michaelneale</id>
+      <name>michaelneale</name>
+      <email>michael.neale@gmail.com</email>
     </developer>
   </developers>
-
-  <scm>
-    <connection>scm:git:ssh://github.com/jenkinsci/simple-theme-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/jenkinsci/simple-theme-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/simple-theme-plugin</url>
-  </scm>
 
   <repositories>
     <repository>
