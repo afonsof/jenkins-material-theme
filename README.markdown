@@ -1,18 +1,24 @@
 Simple CSS Plugin for Jenkins
 ==============================
 A plugin for Jenkins that supports custom CSS.
+This was lifted from https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
+
+This is almost the same thing - but only supports CSS injection. JS injection in
+some cases is a security risk - which is why I made this one for those environments.
+
 
 Author
 ------------------------------
 * @mallowlabs
 * @michaelneale (stole it from the above, who built the simple theme plugin)
 
-How to build
-------------------------------
-You need to prepare Jenkins plugins development environment.
-See [Plugin Tutorial](https://wiki.jenkins-ci.org/display/JENKINS/Plugin+tutorial).
 
-After preparation, type below command:
+
+
+To Try:
+    $ mvn hpi:run
+
+To Build:
     $ mvn package
 
 You will get target/*.hpi .
