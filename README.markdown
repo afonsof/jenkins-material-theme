@@ -7,13 +7,19 @@ This is almost the same thing - but only supports CSS injection. JS injection in
 some cases is a security risk - which is why I made this one for those environments.
 
 
+Examples
+------------------------------
+There is a great example <a href="https://github.com/hawkfalcon/jenkins-clean-theme/">here</a>
+
+
 Author
 ------------------------------
 * @mallowlabs
 * @michaelneale (stole it from the above, who built the simple theme plugin)
 
 
-
+Building
+------------------------------
 
 To Try:
     $ mvn hpi:run
