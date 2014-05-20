@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>plugin</artifactId>
+    <version>1.424</version>
+  </parent>
+
+  <groupId>org.codefirst.jenkins.simplethemeplugin</groupId>
+  <artifactId>simple-theme-plugin</artifactId>
+  <version>0.4-SNAPSHOT</version>
+  <packaging>hpi</packaging>
+
+  <name>Simple Theme Plugin</name>
+  <url>http://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin</url>
+
+  <developers>
+    <developer>
+      <id>mallowlabs</id>
+      <name>mallowlabs</name>
+      <email>mallowlabs@gmail.com</email>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:ssh://github.com/jenkinsci/simple-theme-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/jenkinsci/simple-theme-plugin.git</developerConnection>
+    <url>https://github.com/jenkinsci/simple-theme-plugin</url>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+</project>
