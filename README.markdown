@@ -10,6 +10,12 @@ some cases is a security risk - which is why I made this one for those environme
 Examples
 ------------------------------
 There is a great example <a href="https://github.com/hawkfalcon/jenkins-clean-theme/">here</a>
+You can also point it to this one: 	
+	
+		https://s3.amazonaws.com/cloudbees-downloads/jenkins-styles/blue-ish.css
+
+Which is an adaptation with custom icons and more.
+
 
 
 Author
