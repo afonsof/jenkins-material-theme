@@ -31,23 +31,22 @@ JS: https://577351e10bc4a0198d93-f60a0bb748a3c84145bb10da7563bafb.ssl.cf1.rackcd
 3. Set _URL of theme CSS_ to `http://css.cdn.rackspace.com/canon-jenkins/style.css` (or another URL of your setting/choosing)
 4. Set _URL of theme JS_ to `http://js.cdn.rackspace.com/canon-jenkins/app.min.js` (or another URL of your setting/choosing)
 
+## Building
+
+```
+npm install
+grunt
+```
+
 ## To manually change SimpleTheme CSS and JS values
 
-1. Edit: `$JENKINS_HOME/org.codefirst.SimpleThemeDecorator.xml`
+1. Edit: `$JENKINS_HOME/org.codefirst.SimpleThemeDecorator.xml` with code below
+2. Restart Jenkins
+
 ```
 <?xml version='1.0' encoding='UTF-8'?>
 <org.codefirst.SimpleThemeDecorator plugin="simple-theme-plugin@0.3">
   <cssUrl>http://css.cdn.rackspace.com/canon-jenkins/style.css</cssUrl>
   <jsUrl>http://js.cdn.rackspace.com/canon-jenkins/app.min.js</jsUrl>
 </org.codefirst.SimpleThemeDecorator>
-```
-
-2. Restart Jenkins
- 
-
-## Contributing
-
-```
-npm install
-grunt
 ```
