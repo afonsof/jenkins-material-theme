@@ -2,6 +2,10 @@
 
 CSS and JS to implement [Rackspace Canon](http://canon.rackspace.com/) as a theme for [Jenkins CI](http://jenkins-ci.org/).
 
+Compatible with Jenkins UI post-1.572. For pre-1.572, see below.
+
+Last tested with 1.591.
+
 ### Before
 
 ![Before](CanonJenkinsBefore.png "Before")

@@ -57,14 +57,17 @@ body {
 }
 
 #breadcrumbs {
-    padding: 5px 0 5px 8px !important;
     color: #888 !important;
     text-decoration: none;
     text-shadow: 0 1px #fff;
 }
 
-#main-panel-content div:first-of-type {
-    background-color: transparent !important;
+table.pane tr:nth-child(odd) td {
+    background-color: #fbfbfb;
+}
+
+th.pane {
+    background-color: transparent;
 }
 
 #side-panel .task-link {
