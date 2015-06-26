@@ -156,3 +156,11 @@ td.progress-bar-done {
 td.progress-bar-left {
     border: 1px solid #BBBBBB;
 }
+
+.ygtvlabel, .ygtvlabel:link, .ygtvlabel:visited, .ygtvlabel:hover {
+	background-color: transparent !important;
+}
+
+#main-panel-content > div:nth-child(2) {
+	background-color: transparent !important;
+}
