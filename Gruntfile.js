@@ -1,13 +1,12 @@
 module.exports = function (grunt) {
+    require('load-grunt-tasks')(grunt);
 
-    // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             options: {
                 //banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
                 mangle: true,
-                //compress: true,
                 report: 'min'
             },
             build: {
@@ -33,7 +32,7 @@ module.exports = function (grunt) {
         cssmin: {
             minify: {
                 files: {
-                    'build/styles.css': ['*.css']
+                    'build/styles.css': ['build/styles.css']
                 }
             }
         },
@@ -49,19 +48,18 @@ module.exports = function (grunt) {
         },
         jshint: {
             files: ['*.js']
+        },
+        less: {
+            development: {
+                files: {
+                    "build/styles.css": "less/style.less"
+                }
+            }
         }
     });
 
-    // Load the plugin that provides the "uglify" task.
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-rev');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'uglify', 'cssmin', 'rev', 'jshint']);
+    grunt.registerTask('default', ['clean', 'uglify', 'less', 'cssmin', 'rev', 'jshint']);
 
 
 };
