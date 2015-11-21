@@ -1,0 +1,27 @@
+@import 'variables';
+
+.icon(@size) { // outer mixin
+  padding-left: @size !important;
+  padding-top: @size !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+.icon-img(@url) {
+  &.icon-xlg {
+    @temp: replace(@url, '\{0\}', @size-xl);
+    -webkit-mask: url(@temp) no-repeat !important;
+  }
+  &.icon-lg, &.icon32x32 {
+    @temp: replace(@url, '\{0\}', @size-lg);
+    -webkit-mask: url(@temp) no-repeat !important;
+  }
+  &.icon-md {
+    @temp: replace(@url, '\{0\}', @size-md);
+    -webkit-mask: url(@temp) no-repeat !important;
+  }
+  &.icon-sm {
+    @temp: replace(@url, '\{0\}', @size-sm);
+    -webkit-mask: url(@temp) no-repeat !important;
+  }
+}

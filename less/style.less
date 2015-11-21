@@ -1,3 +1,7 @@
+@import 'variables';
+@import 'functions';
+@import 'colors';
+@import 'images';
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
 
 @-webkit-keyframes rotating {
@@ -11,297 +15,121 @@
 
 /* Size */
 
-.icon-md {
-  padding-left: 24px !important;
-  padding-top: 24px !important;
-  background-color: #9E9E9E;
-  height: 0 !important;
-  width: 0 !important;
-}
-
 .icon-sm {
-  padding-left: 18px !important;
-  padding-top: 18px !important;
-  background-color: #9E9E9E;
-  height: 0 !important;
-  width: 0 !important;
+  .icon(@size-sm);
 }
 
-.icon-lg {
-  padding-left: 36px !important;
-  padding-top: 36px !important;
-  background-color: #9E9E9E;
-  height: 0 !important;
-  width: 0 !important;
+.icon-md {
+  .icon(@size-md);
+}
+
+.icon-lg, .icon32x32 {
+  .icon(@size-lg);
 }
 
 .icon-xlg {
-  padding-left: 48px !important;
-  padding-top: 48px !important;
-  background-color: #9E9E9E;
-  height: 0 !important;
-  width: 0 !important;
+  .icon(@size-xl);
 }
 
-/* Colors */
-
-.icon-blue,
-.icon-blue-anime {
-  background-color: #009688;
+/* Images */
+[src$='blue.png'] {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_check_circle_black_{0}.svg');
 }
 
-.icon-red,
-.icon-red-anime {
-  background-color: #F44336;
+[src$='red.png'] {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_error_black_{0}.svg');
 }
 
-.icon-yellow,
-.icon-yellow-anime {
-  background-color: #FFC107;
+[src$='yellow.png'] {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_warning_black_{0}.svg');
 }
 
-/* Images XLG */
-
-.icon-blue {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_check_circle_black_48px.svg) no-repeat !important;
-}
-
-.icon-red {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_error_black_48px.svg) no-repeat !important;
-}
-
-.icon-yellow {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_warning_black_48px.svg) no-repeat !important;
-}
-
-.icon-grey {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_remove_circle_black_48px.svg) no-repeat !important;
-}
-
-.icon-grey {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_remove_circle_black_48px.svg) no-repeat !important;
+[src$='grey.png'] {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_remove_circle_black_{0}.svg');
 }
 
 .icon-health-80plus {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/7F85265E-304C-4575-A73F-F0FCF0CA951B/48) no-repeat !important;
+  .icon-img('https://materialdesignicons.com/api/download/icon/png/7F85265E-304C-4575-A73F-F0FCF0CA951B/{0}');
 }
 
 .icon-health-60to79 {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/80E6A6FB-1524-4A7D-9551-17D3BDFBD7C5/48) no-repeat !important;
+  .icon-img('https://materialdesignicons.com/api/download/icon/png/80E6A6FB-1524-4A7D-9551-17D3BDFBD7C5/{0}');
 }
 
 .icon-health-40to59 {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/9286B6B3-09EE-4465-9A70-D7874E26F3DF/48) no-repeat !important;
+  .icon-img('https://materialdesignicons.com/api/download/icon/png/9286B6B3-09EE-4465-9A70-D7874E26F3DF/{0}');
 }
 
 .icon-health-20to39 {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/45EF5E01-7499-4964-A897-5602F45A822E/48) no-repeat !important;
+  .icon-img('https://materialdesignicons.com/api/download/icon/png/45EF5E01-7499-4964-A897-5602F45A822E/{0}');
 }
 
 .icon-health-00to19 {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/220955AA-770D-4884-A2ED-F21D2DC2CCDA/48) no-repeat !important;
-}
-
-.icon-notepad {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_history_black_48px.svg) no-repeat !important;
+  .icon-img('https://materialdesignicons.com/api/download/icon/png/220955AA-770D-4884-A2ED-F21D2DC2CCDA/{0}');
 }
 
 .icon-blue-anime,
 .icon-red-anime,
 .icon-grey-anime,
 .icon-yellow-anime {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_autorenew_black_48px.svg) no-repeat !important;
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_autorenew_black_{0}.svg');
   -webkit-animation: rotating 2s linear infinite;
 }
 
-/* Images LG */
-
-.icon-blue.icon-lg {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_check_circle_black_36px.svg) no-repeat !important;
+.icon-clock {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_play_circle_outline_black_{0}.svg');
 }
 
-.icon-red.icon-lg {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_error_black_36px.svg) no-repeat !important;
+.icon-new-package {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_add_circle_outline_black_{0}.svg');
 }
 
-.icon-yellow.icon-lg {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_warning_black_36px.svg) no-repeat !important;
+.icon-user {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_people_black_{0}.svg');
 }
 
-.icon-grey.icon-lg {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_remove_circle_black_36px.svg) no-repeat !important;
+.icon-notepad {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_history_black_{0}.svg');
 }
 
-.icon-grey.icon-lg {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_remove_circle_black_36px.svg) no-repeat !important;
+.icon-setting {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_settings_black_{0}.svg');
 }
 
-.icon-health-80plus.icon-lg {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/7F85265E-304C-4575-A73F-F0FCF0CA951B/36) no-repeat !important;
+.icon-up {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_arrow_back_black_{0}.svg');
 }
 
-.icon-health-60to79.icon-lg {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/80E6A6FB-1524-4A7D-9551-17D3BDFBD7C5/36) no-repeat !important;
+.icon-edit-delete {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_delete_black_{0}.svg');
 }
 
-.icon-health-40to59.icon-lg {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/9286B6B3-09EE-4465-9A70-D7874E26F3DF/36) no-repeat !important;
+.icon-graph {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_insert_chart_black_{0}.svg');
 }
 
-.icon-health-20to39.icon-lg {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/45EF5E01-7499-4964-A897-5602F45A822E/36) no-repeat !important;
+.icon-collapse {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_expand_less_black_{0}.svg');
 }
 
-.icon-health-00to19.icon-lg {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/220955AA-770D-4884-A2ED-F21D2DC2CCDA/36) no-repeat !important;
+.icon-expand {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_expand_more_black_{0}.svg');
 }
 
-.icon-blue-anime.icon-lg,
-.icon-red-anime.icon-lg,
-.icon-grey-anime.icon-lg,
-.icon-yellow-anime.icon-lg {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_autorenew_black_36px.svg) no-repeat !important;
-  -webkit-animation: rotating 2s linear infinite;
+.icon-help {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_help_outline_black_{0}.svg');
 }
 
-/* Images MD */
-
-.icon-blue.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_check_circle_black_24px.svg) no-repeat !important;
+.icon-secure {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_lock_black_{0}.svg');
 }
 
-.icon-red.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_error_black_24px.svg) no-repeat !important;
+.icon-plugin {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_extension_black_{0}.svg');
 }
 
-.icon-yellow.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_warning_black_24px.svg) no-repeat !important;
-}
-
-.icon-grey.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_remove_circle_black_24px.svg) no-repeat !important;
-}
-
-.icon-grey.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_remove_circle_black_24px.svg) no-repeat !important;
-}
-
-.icon-health-80plus.icon-md {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/7F85265E-304C-4575-A73F-F0FCF0CA951B/24) no-repeat !important;
-}
-
-.icon-health-60to79.icon-md {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/80E6A6FB-1524-4A7D-9551-17D3BDFBD7C5/24) no-repeat !important;
-}
-
-.icon-health-40to59.icon-md {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/9286B6B3-09EE-4465-9A70-D7874E26F3DF/24) no-repeat !important;
-}
-
-.icon-health-20to39.icon-md {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/45EF5E01-7499-4964-A897-5602F45A822E/24) no-repeat !important;
-}
-
-.icon-health-00to19.icon-md {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/220955AA-770D-4884-A2ED-F21D2DC2CCDA/24) no-repeat !important;
-}
-
-.icon-clock.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_play_circle_outline_black_24px.svg) no-repeat !important;
-}
-
-.icon-new-package.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_add_circle_outline_black_24px.svg) no-repeat !important;
-}
-
-.icon-user.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_people_black_24px.svg) no-repeat !important;
-}
-
-.icon-notepad.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_history_black_24px.svg) no-repeat !important;
-}
-
-.icon-setting.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_settings_black_24px.svg) no-repeat !important;
-}
-
-.icon-up.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_arrow_back_black_24px.svg) no-repeat !important;
-}
-
-.icon-edit-delete.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_delete_black_24px.svg) no-repeat !important;
-}
-
-.icon-graph.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_insert_chart_black_24px.svg) no-repeat !important;
-}
-
-.icon-blue-anime.icon-md,
-.icon-red-anime.icon-md,
-.icon-grey-anime.icon-md,
-.icon-yellow-anime.icon-md {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_autorenew_black_24px.svg) no-repeat !important;
-  -webkit-animation: rotating 2s linear infinite;
-}
-
-/* Images SM */
-
-.icon-blue.icon-sm {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_check_circle_black_18px.svg) no-repeat !important;
-}
-
-.icon-red.icon-sm {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_error_black_18px.svg) no-repeat !important;
-}
-
-.icon-yellow.icon-sm {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_warning_black_18px.svg) no-repeat !important;
-}
-
-.icon-grey.icon-sm {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_remove_circle_black_18px.svg) no-repeat !important;
-}
-
-.icon-grey.icon-sm {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_remove_circle_black_18px.svg) no-repeat !important;
-}
-
-.icon-health-80plus.icon-sm {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/7F85265E-304C-4575-A73F-F0FCF0CA951B/18) no-repeat !important;
-}
-
-.icon-health-60to79.icon-sm {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/80E6A6FB-1524-4A7D-9551-17D3BDFBD7C5/18) no-repeat !important;
-}
-
-.icon-health-40to59.icon-sm {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/9286B6B3-09EE-4465-9A70-D7874E26F3DF/18) no-repeat !important;
-}
-
-.icon-health-20to39.icon-sm {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/45EF5E01-7499-4964-A897-5602F45A822E/18) no-repeat !important;
-}
-
-.icon-health-00to19.icon-sm {
-  -webkit-mask: url(https://materialdesignicons.com/api/download/icon/png/220955AA-770D-4884-A2ED-F21D2DC2CCDA/18) no-repeat !important;
-}
-
-.icon-collapse.icon-sm {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_expand_less_black_18px.svg) no-repeat !important;
-}
-
-.icon-expand.icon-sm {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_expand_more_black_18px.svg) no-repeat !important;
-}
-
-.icon-blue-anime.icon-sm,
-.icon-red-anime.icon-sm,
-.icon-grey-anime.icon-sm,
-.icon-yellow-anime.icon-sm {
-  -webkit-mask: url(https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_autorenew_black_18px.svg) no-repeat !important;
-  -webkit-animation: rotating 2s linear infinite;
+.icon-system-log-out {
+  .icon-img('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_power_settings_new_black_{0}.svg');
 }
 
 [href$=rssAll] > img,
@@ -359,12 +187,19 @@ a, a:hover, a:visited, a:link {
 
 .task-icon-link[href='/'] {
   position: fixed;
-  top: 14px;
-  left: 21px;
+  top: 20px;
+  left: 20px;
   background-color: #212121;
-  height: 50px;
+  height: 40px;
   width: 170px;
   z-index: 1100;
+
+  img {
+    padding-left: 36px !important;
+    padding-top: 36px !important;
+    -webkit-mask: url('https://storage.googleapis.com/material-icons/external-assets/v2/icons/svg/ic_arrow_back_black_36px.svg') no-repeat !important;
+    background-color: white;
+  }
 }
 
 * {
@@ -470,6 +305,32 @@ td.progress-bar-left {
   background-color: transparent !important
 }
 
+.yui-button.primary button {
+  text-decoration: none;
+  color: #fff !important;
+  background-color: #26a69a !important;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+
+  border: none !important;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
 
 
 
