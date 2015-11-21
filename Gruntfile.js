@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
@@ -6,25 +6,25 @@ module.exports = function(grunt) {
         uglify: {
             options: {
                 //banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-                mangle : true,
-                compress : true,
+                mangle: true,
+                //compress: true,
                 report: 'min'
             },
-            build : {
+            build: {
                 files: {
                     'build/output.min.js': ['app.js']
                 }
             }
         },
-        copy : {
-            views : {
-                files : [
+        copy: {
+            views: {
+                files: [
                     {
-                        src  : [
+                        src: [
                             'app.js',
                             'style.css'
                         ],
-                        dest : 'build/'
+                        dest: 'build/'
                     }
                 ]
             }
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         cssmin: {
             minify: {
                 files: {
-                    'build/styles.css' : ['*.css']
+                    'build/styles.css': ['*.css']
                 }
             }
         },
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'uglify', 'cssmin','rev','jshint']);
+    grunt.registerTask('default', ['clean', 'uglify', 'cssmin', 'rev', 'jshint']);
 
 
 };
