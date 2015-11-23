@@ -1,6 +1,6 @@
 {
   "name": "jenkins-material-theme",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Material design theme for Jenkins",
   "repository": {
     "type": "git",
