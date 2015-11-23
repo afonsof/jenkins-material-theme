@@ -3,72 +3,42 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        uglify: {
-            options: {
-                //banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-                mangle: true,
-                report: 'min'
-            },
-            build: {
+
+        clean: {
+            dist: {
+                src: ["dist/"]
+            }
+        },
+
+        less: {
+            dist: {
                 files: {
-                    'build/output.min.js': ['app.js']
+                    "dist/styles.css": "less/style.less"
                 }
             }
         },
-        copy: {
-            views: {
-                files: [
-                    {
-                        src: [
-                            'app.js',
-                            'style.css'
-                        ],
-                        dest: 'build/'
-                    }
-                ]
-            }
 
+        imageEmbed: {
+            dist: {
+                src: ["dist/styles.css"],
+                dest: "dist/styles.css",
+                options: {
+                    deleteAfterEncoding: false
+                }
+            }
         },
+
         cssmin: {
             minify: {
                 files: {
-                    'build/styles.css': ['build/styles.css']
-                }
-            }
-        },
-        clean: {
-            build: {
-                src: ["build/"]
-            }
-        },
-        rev: {
-            files: {
-                src: ['build/*.{js,css}']
-            }
-        },
-        jshint: {
-            files: ['*.js']
-        },
-        less: {
-            development: {
-                files: {
-                    "build/styles.css": "less/style.less"
-                }
-            }
-        },
-        imageEmbed: {
-            dist: {
-                src: ["build/styles.css"],
-                dest: "build/styles.css",
-                options: {
-                    deleteAfterEncoding: false
+                    'dist/styles.css': ['dist/styles.css']
                 }
             }
         }
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'uglify', 'less', 'imageEmbed', 'cssmin', 'rev', 'jshint']);
+    grunt.registerTask('default', ['clean', 'less', 'imageEmbed', 'cssmin']);
 
 
 };
