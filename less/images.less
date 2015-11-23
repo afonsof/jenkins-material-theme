@@ -1,0 +1,229 @@
+@import "variables";
+@import "functions";
+
+/* Src */
+
+[src$='blue.png'] {
+  .icon-img('../images/ic_check_circle_black.svg');
+}
+
+[src$='red.png'] {
+  .icon-img('../images/ic_error_black.svg');
+}
+
+[src$='yellow.png'] {
+  .icon-img('../images/ic_warning_black.svg');
+}
+
+[src$='grey.png'] {
+  .icon-img('../images/ic_remove_circle_black.svg');
+}
+
+.icon-health-80plus {
+  .icon-img('../images/weather-sunny.svg');
+}
+
+.icon-health-60to79 {
+  .icon-img('../images/weather-partlycloudy.svg');
+}
+
+.icon-health-40to59 {
+  .icon-img('../images/weather-cloudy.svg');
+}
+
+.icon-health-20to39 {
+  .icon-img('../images/weather-rainy.svg');
+}
+
+.icon-health-00to19 {
+  .icon-img('../images/weather-pouring.svg');
+}
+
+.icon-blue-anime,
+.icon-red-anime,
+.icon-grey-anime,
+.icon-yellow-anime {
+  .icon-img('../images/ic_autorenew_black.svg');
+  -webkit-animation: rotating 2s linear infinite;
+}
+
+.icon-clock {
+  .icon-img('../images/ic_play_circle_outline_black.svg');
+}
+
+.icon-new-package {
+  .icon-img('../images/ic_add_circle_outline_black.svg');
+}
+
+.icon-user {
+  .icon-img('../images/ic_people_black.svg');
+}
+
+.icon-notepad {
+  .icon-img('../images/ic_history_black.svg');
+}
+
+.icon-setting {
+  .icon-img('../images/ic_settings_black.svg');
+}
+
+.icon-up {
+  .icon-img('../images/ic_arrow_back_black.svg');
+}
+
+.icon-edit-delete {
+  .icon-img('../images/ic_delete_black.svg');
+}
+
+.icon-graph {
+  .icon-img('../images/ic_insert_chart_black.svg');
+}
+
+.icon-collapse {
+  .icon-img('../images/ic_expand_less_black.svg');
+}
+
+.icon-expand {
+  .icon-img('../images/ic_expand_more_black.svg');
+}
+
+.icon-help {
+  .icon-img('../images/ic_help_outline_black.svg');
+}
+
+.icon-secure {
+  .icon-img('../images/ic_lock_black.svg');
+}
+
+.icon-plugin {
+  .icon-img('../images/ic_extension_black.svg');
+}
+
+.icon-system-log-out {
+  .icon-img('../images/ic_power_settings_new_black.svg');
+}
+
+.icon-refresh {
+  .icon-img('../images/ic_refresh_black.svg');
+}
+
+.icon-computer {
+  .icon-img('../images/ic_computer_black.svg');
+}
+
+.icon-clipboard {
+  .icon-img('../images/ic_assignment_black.svg');
+}
+
+.icon-monitor {
+  .icon-img('../images/chart-areaspline.svg');
+}
+
+.icon-terminal {
+  .icon-img('../images/console.svg');
+}
+
+.icon-network {
+  .icon-img('../images/server-network.svg');
+}
+
+.icon-document, .icon-text {
+  .icon-img('../images/ic_file.svg');
+}
+
+.icon-folder {
+  .icon-img('../images/folder.svg');
+}
+
+.icon-folder-delete {
+  .icon-img('../images/folder-remove.svg');
+}
+
+.icon-previous {
+  .icon-img('../images/skip_previous.svg');
+}
+
+.icon-next {
+  .icon-img('../images/skip_next.svg');
+}
+
+.icon-save {
+  .icon-img('../images/save.svg');
+}
+
+.icon-package {
+  .icon-img('../images/package-down.svg');
+}
+
+.icon-search {
+  .icon-img('../images/info_outline.svg');
+}
+
+[src$='/atom.gif'] {
+  .icon(@size-md);
+  .icon-img('../images/rss-box.svg');
+  background-color: @color-yellow;
+}
+
+[src$='credentials.png'] {
+  .icon(@size-xl);
+  .icon-img('../images/key.svg');
+  background-color: @color-grey;
+  &[style^="width: 24px"] {
+    .icon(@size-md) !important;
+  }
+}
+
+[src$='domain.png'] {
+  .icon(@size-xl);
+  .icon-img('../images/domain.svg');
+  background-color: @color-grey;
+  &[style^="width: 24px"] {
+    .icon(@size-md) !important;
+  }
+}
+
+[src$='24x24/terminal.png'] {
+  .icon(@size-md);
+  .icon-img('../images/console.svg');
+  background-color: @color-grey;
+}
+
+/* Colors */
+
+.icon-xlg, .icon-lg, .icon-md, .icon-sm, .icon32x32 {
+  background-color: @color-grey;
+}
+
+.icon-blue-anime,
+[src$='blue.png'] {
+  background-color: @color-green;
+}
+
+.icon-red-anime,
+[src$='red.png'] {
+  background-color: @color-red;
+}
+
+.icon-yellow-anime,
+[src$='yellow.png'] {
+  background-color: @color-yellow;
+}
+
+/* Size */
+
+.icon-sm {
+  .icon(@size-sm);
+}
+
+.icon-md {
+  .icon(@size-md);
+}
+
+.icon-lg, .icon32x32 {
+  .icon(@size-lg);
+}
+
+.icon-xlg {
+  .icon(@size-xl);
+}

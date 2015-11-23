@@ -55,11 +55,20 @@ module.exports = function (grunt) {
                     "build/styles.css": "less/style.less"
                 }
             }
+        },
+        imageEmbed: {
+            dist: {
+                src: ["build/styles.css"],
+                dest: "build/styles.css",
+                options: {
+                    deleteAfterEncoding: false
+                }
+            }
         }
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'uglify', 'less', 'cssmin', 'rev', 'jshint']);
+    grunt.registerTask('default', ['clean', 'uglify', 'less', 'imageEmbed', 'cssmin', 'rev', 'jshint']);
 
 
 };

@@ -1,27 +1,32 @@
 @import 'variables';
 
 .icon(@size) { // outer mixin
-  padding-left: @size !important;
-  padding-top: @size !important;
+  padding-left: @size * 1.2 !important;
+  padding-top: @size * 1.2 !important;
   height: 0 !important;
   width: 0 !important;
+  -webkit-mask-size: @size @size !important;
+  -webkit-mask-repeat: no-repeat !important;
+  -webkit-mask-position: center center !important;
 }
 
 .icon-img(@url) {
-  &.icon-xlg {
-    @temp: replace(@url, '\{0\}', @size-xl);
-    -webkit-mask: url(@temp) no-repeat !important;
+  -webkit-mask-image: url(@url) !important;
+  -webkit-mask-repeat: no-repeat !important;
+  -webkit-mask-position: center center !important;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
   }
-  &.icon-lg, &.icon32x32 {
-    @temp: replace(@url, '\{0\}', @size-lg);
-    -webkit-mask: url(@temp) no-repeat !important;
+  to {
+    -webkit-transform: rotate(360deg);
   }
-  &.icon-md {
-    @temp: replace(@url, '\{0\}', @size-md);
-    -webkit-mask: url(@temp) no-repeat !important;
-  }
-  &.icon-sm {
-    @temp: replace(@url, '\{0\}', @size-sm);
-    -webkit-mask: url(@temp) no-repeat !important;
-  }
+}
+
+.shadow1() {
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }

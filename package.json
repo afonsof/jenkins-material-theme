@@ -24,7 +24,10 @@
     "grunt-contrib-jshint": "^0.6.5",
     "grunt-contrib-less": "^1.1.0",
     "grunt-contrib-uglify": "^0.2.7",
+    "grunt-image-embed": "^0.3.3",
     "grunt-rev": "^0.1.0",
-    "load-grunt-tasks": "^3.3.0"
+    "install": "^0.3.0",
+    "load-grunt-tasks": "^3.3.0",
+    "npm": "^3.4.1"
   }
 }
