@@ -13,23 +13,23 @@ module.exports = function (grunt) {
         less: {
             dist: {
                 files: {
-                    "dist/theme-light.css": "less/style.less",
-                    "dist/theme-dracula.css": "less/dracula.less"
+                    "dist/material-light.css": "less/style.less",
+                    "dist/material-dracula.css": "less/dracula.less"
                 }
             }
         },
 
         imageEmbed: {
             light: {
-                src: ["dist/theme-light.css"],
-                dest: "dist/theme-light.css",
+                src: ["dist/material-light.css"],
+                dest: "dist/material-light.css",
                 options: {
                     deleteAfterEncoding: false
                 }
             },
             dracula: {
-                src: ["dist/theme-dracula.css"],
-                dest: "dist/theme-dracula.css",
+                src: ["dist/material-dracula.css"],
+                dest: "dist/material-dracula.css",
                 options: {
                     deleteAfterEncoding: false
                 }
@@ -39,8 +39,8 @@ module.exports = function (grunt) {
         cssmin: {
             minify: {
                 files: {
-                    'dist/theme-light.css': ['dist/theme-light.css'],
-                    'dist/theme-dracula.css': ['dist/theme-dracula.css']
+                    'dist/material-light.css': ['dist/material-light.css'],
+                    'dist/material-dracula.css': ['dist/material-dracula.css']
                 }
             }
         },
