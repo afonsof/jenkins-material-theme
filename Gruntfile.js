@@ -13,15 +13,23 @@ module.exports = function (grunt) {
         less: {
             dist: {
                 files: {
-                    "dist/styles.css": "less/style.less"
+                    "dist/theme-light.css": "less/style.less",
+                    "dist/theme-dracula.css": "less/dracula.less"
                 }
             }
         },
 
         imageEmbed: {
-            dist: {
-                src: ["dist/styles.css"],
-                dest: "dist/styles.css",
+            light: {
+                src: ["dist/theme-light.css"],
+                dest: "dist/theme-light.css",
+                options: {
+                    deleteAfterEncoding: false
+                }
+            },
+            dracula: {
+                src: ["dist/theme-dracula.css"],
+                dest: "dist/theme-dracula.css",
                 options: {
                     deleteAfterEncoding: false
                 }
@@ -31,9 +39,24 @@ module.exports = function (grunt) {
         cssmin: {
             minify: {
                 files: {
-                    'dist/styles.css': ['dist/styles.css']
+                    'dist/theme-light.css': ['dist/theme-light.css'],
+                    'dist/theme-dracula.css': ['dist/theme-dracula.css']
                 }
             }
+        },
+        imagemin: {
+            dynamic: {
+                options: {
+                    svgoPlugins: [{removeViewBox: true}]
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'images/',
+                    src: ['**/*.svg'],
+                    dest: 'images/'
+                }]
+            }
+
         }
     });
 

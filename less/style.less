@@ -7,23 +7,27 @@
   font-family: 'Roboto', sans-serif !important;
 }
 
+body, table, form, td, th, p {
+  color: @color-text !important;
+}
+
 body {
   font-family: 'Roboto', sans-serif !important;
   font-size: 13px !important;
   line-height: 20px !important;
-  color: @color-text;
+  background-color: @color-bg;
 }
 
 a, a:hover, a:visited, a:link {
   text-decoration: none !important;
-  color: @color-primary;
+  color: @color-link;
   &:hover {
     opacity: 0.75;
   }
 }
 
 #page-body {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .task-link[href='/'] {
@@ -32,9 +36,9 @@ a, a:hover, a:visited, a:link {
 
 .task-icon-link[href='/'] {
   position: fixed;
-  top: 20px;
+  top: 12px;
   left: 20px;
-  background-color: @color-primary;
+  background-color: @color-link;
   height: 40px;
   width: 170px;
   z-index: 1100;
@@ -44,16 +48,14 @@ a, a:hover, a:visited, a:link {
   }
 
   img {
-    padding-left: 36px !important;
-    padding-top: 36px !important;
-    -webkit-mask-size: 36px 36px !important;
-    background-color: white;
+    padding: 36px 0 0 36px !important;
+    background-color: @color-white;
   }
 }
 
 #header {
   .shadow1();
-  height: 80px;
+  height: 64px;
   background-color: @color-primary;
   text-transform: uppercase;
   position: fixed;
@@ -62,7 +64,7 @@ a, a:hover, a:visited, a:link {
   top: 0;
   z-index: 1030;
   letter-spacing: 1px;
-  padding: 19px 10px;
+  padding: 12px 10px;
 
   .login {
     top: inherit;
@@ -74,12 +76,12 @@ a, a:hover, a:visited, a:link {
   }
 
   #search-box {
-    background: white;
+    background: @color-white;
     padding-left: 10px;
   }
 
   .icon-help {
-    background-color: white;
+    background-color: @color-white;
   }
 }
 
@@ -88,14 +90,14 @@ a, a:hover, a:visited, a:link {
 }
 
 .top-sticker-inner {
-  background: none repeat scroll 0 0 #FFF !important;
-  box-shadow: #c2c2c2 0 3px 8px 1px
+  background: none repeat scroll 0 0 @color-white !important;
+  box-shadow: @color-white 0 3px 8px 1px
 }
 
 #breadcrumbs LI:hover,
 A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
   background-color: transparent !important;
-  color: #333 !important
+  color: @color-link !important
 }
 
 #breadcrumbs {
@@ -105,7 +107,7 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
 }
 
 table.pane tr:nth-child(odd) td {
-  background-color: #fbfbfb
+  background-color: @color-white
 }
 
 th.pane {
@@ -113,7 +115,7 @@ th.pane {
 }
 
 #side-panel .task-link {
-  color: #333
+  color: @color-text;
 }
 
 .bottom-sticker-edge {
@@ -123,13 +125,13 @@ th.pane {
 .bottom-sticker-inner {
   margin: 0 0 0 -15px;
   padding-left: 15px;
-  background: none repeat scroll 0 0 #FFF !important;
-  box-shadow: #c2c2c2 0 3px 8px 1px
+  background: none repeat scroll 0 0 @color-white !important;
+  box-shadow: @color-white 0 3px 8px 1px
 }
 
 #projectstatus th,
 #projectstatus td {
-  color: #333
+  color: @color-text
 }
 
 #projectstatus th a {
@@ -186,7 +188,7 @@ td.progress-bar-left {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
   &.primary button {
-    color: #fff !important;
+    color: @color-white !important;
     background-color: @color-primary !important;
   }
 
@@ -196,9 +198,16 @@ td.progress-bar-left {
   position: relative;
   font-family: courier, monospace;
   font-size: 14px;
-  background: #3c3f41;
-  color: #bbbbbb;
+  background: @color-primary;
+  color: @color-text;
   padding: 5px;
   cursor: text;
 }
 
+[style^="color:gray"] {
+  color: @color-grey !important;
+}
+
+[style^="color:red"] {
+  color: @color-red !important;
+}
