@@ -119,7 +119,7 @@
   .icon-img('../images/chart-areaspline.svg');
 }
 
-.icon-terminal {
+.icon-terminal, [src$='24x24/terminal.png'] {
   .icon-img('../images/console.svg');
 }
 
@@ -170,7 +170,7 @@
   .icon-img('../images/key.svg');
   background-color: @color-grey;
   &[style^="width: 24px"] {
-    .icon(@size-md) !important;
+    .icon(@size-md);
   }
 }
 
@@ -179,13 +179,16 @@
   .icon-img('../images/domain.svg');
   background-color: @color-grey;
   &[style^="width: 24px"] {
-    .icon(@size-md) !important;
+    .icon(@size-md);
   }
+}
+
+#description-link img {
+  .icon-img('../images/pencil.svg');
 }
 
 [src$='24x24/terminal.png'] {
   .icon(@size-md);
-  .icon-img('../images/console.svg');
   background-color: @color-grey;
 }
 
