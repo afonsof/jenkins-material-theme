@@ -11,7 +11,7 @@ You can turn your favorite frog CI tool in a handsome prince in few steps!
 * Embed minified SVG images
 * More than one installation form
 
-## Screenshots
+## Screenshots   
 ![Screen 1](images/screen1.png)   ![Screen 2](images/screen2.png)   ![Screen 3](images/screen3.png)
 
 
