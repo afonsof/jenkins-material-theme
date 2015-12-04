@@ -3,3 +3,6 @@
 build
 node_modules
 .vagrant
+_site
+.jekyll-metadata
+.sass-cache
