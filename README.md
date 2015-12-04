@@ -8,7 +8,7 @@ You can turn your favorite frog CI tool in a handsome prince in few steps!
  
 ## Features
 * Just one small css file (32K)
-* Embed minified SVG images
+* Embedded minified SVG images
 * More than one installation form
 
 ## Screenshots   
