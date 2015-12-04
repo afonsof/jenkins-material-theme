@@ -1,3 +1,6 @@
+# jenkins-material-theme
+Beautify your Jenkins with the Material Design theme!
+
 So you are love **Jenkins** but hate its ugly user interface and icons... Me too! Introducing **Jenkins Material Theme**.
 You can turn your favorite frog CI tool in a handsome prince in few steps!   
  
