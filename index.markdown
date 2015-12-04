@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+    
 So you are love **Jenkins** but hate its ugly user interface and icons... Me too! Introducing **Jenkins Material Theme**.
 You can turn your favorite frog CI tool in a handsome prince in few steps!   
  
@@ -88,8 +88,10 @@ If you are experiencing issues please let me know! Also, feel free to contribute
 - [Google][google] for the the material design inspiration and the icons
 - [Material Design Icons][material-design-icons] for some extra icons
 - [Stylish][stylish] for making the test of new versions easy
+- [canon-jenkins][canon-jenkins] for the base theme
 
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
 [google]: https://www.google.com/design/spec/material-design/introduction.html
 [material-design-icons]: https://materialdesignicons.com/
 [stylish]: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
+[canon-jenkins]: https://github.com/rackerlabs/canon-jenkins
