@@ -3,15 +3,15 @@ Beautify your Jenkins with the Material Design theme!
 
 Website: http://afonsof.github.io/jenkins-material-theme
 
-So you are love **Jenkins** but hate its ugly user interface and icons... Me too! Introducing **Jenkins Material Theme**.
-You can turn your favorite frog CI tool in a handsome prince in few steps!   
+So you love **Jenkins** but hate its ugly user interface and icons... Me too! Introducing **Jenkins Material Theme**.
+You can turn your favorite frog CI tool into a handsome prince in few steps!   
  
 ## Features
 * Just one small css file (32K)
-* Embedded minified SVG images
+* Embed minified SVG images
 * Multiple ways to install
 
-## Screenshots   
+## Screenshots
 ![Screen 1](images/screen1.png)   ![Screen 2](images/screen2.png)   ![Screen 3](images/screen3.png)
 
 
@@ -85,12 +85,14 @@ And you can find the file at:
 If you are experiencing issues please let me know! Also, feel free to contribute!
 
 ##Thanks to
-- [Simple Theme Theme Plugin][simple] for the Simple Theme plugin
+- [Simple Theme Plugin][simple] for the Simple Theme plugin
 - [Google][google] for the the material design inspiration and the icons
 - [Material Design Icons][material-design-icons] for some extra icons
 - [Stylish][stylish] for making the test of new versions easy
+- [canon-jenkins][canon-jenkins] for the base theme
 
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
 [google]: https://www.google.com/design/spec/material-design/introduction.html
 [material-design-icons]: https://materialdesignicons.com/
 [stylish]: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
+[canon-jenkins]: https://github.com/rackerlabs/canon-jenkins
