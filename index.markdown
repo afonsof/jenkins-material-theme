@@ -3,7 +3,7 @@ layout: default
 ---
     
 So you love **Jenkins** but hate its ugly user interface and icons... Me too! Introducing **Jenkins Material Theme**.
-You can turn your favorite frog CI tool in a handsome prince in few steps!   
+You can turn your favorite frog CI tool into a handsome prince in few steps!   
  
 ## Features
 * Just one small css file (32K)
