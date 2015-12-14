@@ -148,15 +148,22 @@ a#jenkins-home-link {
 }
 
 table.progress-bar.red td.progress-bar-done {
-  background-color: @color-red;
+  background-color: @color-red !important;
+  border-color: @color-red !important;
 }
 
 td.progress-bar-done {
-  background-color: @color-green;
+  background-color: @color-green !important;
+  border-color: @color-green !important;
 }
 
 td.progress-bar-left {
-  border: 1px solid #BBB
+  border: none !important;
+  background-color: #ccc !important;
+}
+
+table.progress-bar {
+  border-color: transparent !important;
 }
 
 .ygtvlabel,
@@ -198,9 +205,9 @@ td.progress-bar-left {
 
 }
 
-.console-output {
+.console-output, .console-output * {
   position: relative;
-  font-family: courier, monospace !important;
+  font-family: "Courier New", Courier, monospace !important;
   font-size: 14px;
   background: @color-black;
   color: @color-white;
