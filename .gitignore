@@ -1,7 +1,8 @@
 .DS_Store
-.idea
+.idea/
 build
-node_modules
-.vagrant
-.sass-cache
-_site
+node_modules/
+.vagrant/
+.sass-cache/
+_site/
+dist/
