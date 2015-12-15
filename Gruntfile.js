@@ -59,18 +59,10 @@ module.exports = function (grunt) {
             }
         },
 
-        uglify: {
-            firefox_polyfill: {
-                files: {
-                    'dist/firefox-polyfill.min.js': ['js/firefox-polyfill.js']
-                }
-            }
-        }
-
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'less', 'imageEmbed', 'cssmin', 'uglify']);
+    grunt.registerTask('default', ['clean', 'less', 'imageEmbed', 'cssmin']);
 
 
 };

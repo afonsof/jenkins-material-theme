@@ -4,15 +4,15 @@
 /* Src */
 
 [src$='blue.png'] {
-  .icon-img('../images/ic_check_circle_black.svg');
+  .icon-img('../images/ic_check_circle_green.svg');
 }
 
 [src$='red.png'] {
-  .icon-img('../images/ic_error_black.svg');
+  .icon-img('../images/ic_error_red.svg');
 }
 
 [src$='yellow.png'] {
-  .icon-img('../images/ic_warning_black.svg');
+  .icon-img('../images/ic_warning_yellow.svg');
 }
 
 [src$='grey.png'] {
@@ -48,35 +48,39 @@
 }
 
 .icon-clock {
-  .icon-img('../images/ic_play_circle_outline_black.svg');
+  .icon-img('../images/ic_play_circle_outline_grey.svg');
 }
 
 .icon-new-package {
-  .icon-img('../images/ic_add_circle_outline_black.svg');
+  .icon-img('../images/ic_add_circle_outline_grey.svg');
 }
 
 .icon-user {
-  .icon-img('../images/ic_people_black.svg');
+  .icon-img('../images/ic_people_grey.svg');
 }
 
 .icon-notepad {
-  .icon-img('../images/ic_history_black.svg');
+  .icon-img('../images/ic_history_grey.svg');
 }
 
 .icon-setting {
-  .icon-img('../images/ic_settings_black.svg');
+  .icon-img('../images/ic_settings_grey.svg');
+}
+
+#header .icon-up {
+  .icon-img('../images/ic_arrow_back_white.svg');
 }
 
 .icon-up {
-  .icon-img('../images/ic_arrow_back_black.svg');
+  .icon-img('../images/ic_arrow_back_grey.svg');
 }
 
 .icon-edit-delete {
-  .icon-img('../images/ic_delete_black.svg');
+  .icon-img('../images/ic_delete_grey.svg');
 }
 
 .icon-graph {
-  .icon-img('../images/ic_insert_chart_black.svg');
+  .icon-img('../images/ic_insert_chart_grey.svg');
 }
 
 .icon-collapse {
@@ -87,32 +91,36 @@
   .icon-img('../images/ic_expand_more_black.svg');
 }
 
+#header .icon-help {
+  .icon-img('../images/ic_help_outline_white.svg');
+}
+
 .icon-help {
-  .icon-img('../images/ic_help_outline_black.svg');
+  .icon-img('../images/ic_help_outline_grey.svg');
 }
 
 .icon-secure {
-  .icon-img('../images/ic_lock_black.svg');
+  .icon-img('../images/ic_lock_grey.svg');
 }
 
 .icon-plugin {
-  .icon-img('../images/ic_extension_black.svg');
+  .icon-img('../images/ic_extension_grey.svg');
 }
 
 .icon-system-log-out {
-  .icon-img('../images/ic_power_settings_new_black.svg');
+  .icon-img('../images/ic_power_settings_new_grey.svg');
 }
 
 .icon-refresh {
-  .icon-img('../images/ic_refresh_black.svg');
+  .icon-img('../images/ic_refresh_grey.svg');
 }
 
 .icon-computer {
-  .icon-img('../images/ic_computer_black.svg');
+  .icon-img('../images/ic_computer_grey.svg');
 }
 
 .icon-clipboard {
-  .icon-img('../images/ic_assignment_black.svg');
+  .icon-img('../images/ic_assignment_grey.svg');
 }
 
 .icon-monitor {
@@ -128,7 +136,7 @@
 }
 
 .icon-document, .icon-text {
-  .icon-img('../images/ic_file.svg');
+  .icon-img('../images/ic_file_grey.svg');
 }
 
 .icon-folder {
@@ -166,13 +174,11 @@
 [src$='/atom.gif'] {
   .icon(@size-md);
   .icon-img('../images/rss-box.svg');
-  background-color: @color-yellow;
 }
 
 [src$='credentials.png'] {
   .icon(@size-xl);
   .icon-img('../images/key.svg');
-  background-color: @color-grey;
   &[style^="width: 24px"] {
     .icon(@size-md);
   }
@@ -200,25 +206,14 @@
   .icon-img('../images/arrow_forward.svg');
 }
 
-/* Colors */
-
-.icon-xlg, .icon-lg, .icon-md, .icon-sm, .icon32x32 {
+[src$='diskusage48.png'] {
+  .icon(@size-md);
+  .icon-img('../images/ic_storage_black.svg');
   background-color: @color-grey;
 }
 
-.icon-blue-anime,
-[src$='blue.png'] {
-  background-color: @color-green;
-}
-
-.icon-red-anime,
-[src$='red.png'] {
-  background-color: @color-red;
-}
-
-.icon-yellow-anime,
-[src$='yellow.png'] {
-  background-color: @color-yellow;
+h1 > [src$='diskusage48.png'] {
+  .icon(@size-xl);
 }
 
 /* Size */

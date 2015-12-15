@@ -5,16 +5,15 @@
   padding-top: @size * 1.2 !important;
   height: 0 !important;
   width: 0 !important;
-  -webkit-mask-size: @size @size !important;
-  -webkit-mask-repeat: no-repeat !important;
-  -webkit-mask-position: center center !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 
 .icon-img(@url) {
-  -webkit-mask-image: url(@url) !important;
-  -webkit-mask-repeat: no-repeat !important;
-  -webkit-mask-position: center center !important;
-  mask: url(@url);
+  background-image: url(@url) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
 }
 
 @-webkit-keyframes rotating {
