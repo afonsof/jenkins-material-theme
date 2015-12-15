@@ -44,6 +44,7 @@ module.exports = function (grunt) {
                 }
             }
         },
+
         imagemin: {
             dynamic: {
                 options: {
@@ -56,12 +57,20 @@ module.exports = function (grunt) {
                     dest: 'images/'
                 }]
             }
+        },
 
+        uglify: {
+            firefox_polyfill: {
+                files: {
+                    'dist/firefox-polyfill.min.js': ['js/firefox-polyfill.js']
+                }
+            }
         }
+
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'less', 'imageEmbed', 'cssmin']);
+    grunt.registerTask('default', ['clean', 'less', 'imageEmbed', 'cssmin', 'uglify']);
 
 
 };
