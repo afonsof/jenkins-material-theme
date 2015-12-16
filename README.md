@@ -7,7 +7,7 @@ So you love **Jenkins** but hate its ugly user interface and icons... Me too! In
 You can turn your favorite frog CI tool into a handsome prince in few steps!   
  
 ## Features
-* Just one small css file (32K)
+* Just one small css file (35K)
 * Embed minified SVG images
 * Multiple ways to install
 
@@ -17,22 +17,25 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 
 ## Installation 
 
-### Using your Jenkins Hosting
+### Using this GitHub page (recommended)
 
 1. Install [Jenkins Simple Theme Plugin][simple]
-
-1. Upload the file `http://afonsof.github.io/jenkins-material-theme/dist/material-light.css` to your web server
 
 1. Click `Manage Jenkins`
 
 1. Click `Configure System` and scroll down to `Theme`
 
-1. Specify the URL for `material-light.css`. 
+1. Specify the URL for `http://afonsof.github.io/jenkins-material-theme/dist/material-light.css`.
 
 1. Click `Save`
 
-### Using this GitHub page
-Skip step 2 and use this URL in step 5: `http://afonsof.github.io/jenkins-material-theme/dist/material-light.css`
+
+### Using your Jenkins Hosting
+
+1. Upload the file `http://afonsof.github.io/jenkins-material-theme/dist/material-light.css` to your web server
+
+1. Follow the steps of the previous method using your uploaded file as URL in step 4
+
 
 ### Using Stylish (only you will be able to see the awesome theme)
 
@@ -75,11 +78,11 @@ And you can find the file at:
 ## Compatibility
 - Simple Theme plugin 0.3
 - Jenkins 1.636
-- Firefox 3.5 [!]
+- Firefox 3.5+
 - Chrome 4+
 - Safari 4+
 - Opera 15+
-- It's not possible to support Microsoft IE or Edge because they don't implement css masks: http://caniuse.com/#feat=css-masks
+- Microsoft IE11 and Edge
 
 
 If you are experiencing issues please let me know! Also, feel free to contribute!
