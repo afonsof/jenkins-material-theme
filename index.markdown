@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-    
+
 So you love **Jenkins** but hate its ugly user interface and icons... Me too! Introducing **Jenkins Material Theme**.
 You can turn your favorite frog CI tool into a handsome prince in few steps!   
  
@@ -65,15 +65,6 @@ grunt
 This will generate the following file:
 - dist/material-light.css
 
-You can publish the files on gh-pages with the following command:
-
-```
-grunt deploy
-```
-
-And you can find the file at:
-- `http://YOURUSER.github.io/jenkins-material-theme/material-light.css`
-
 ## Compatibility
 - Simple Theme plugin 0.3
 - Jenkins 1.636
@@ -95,9 +86,11 @@ http://afonsof.mit-license.org/
 - [Material Design Icons][material-design-icons] for some extra icons
 - [Stylish][stylish] for making the test of new versions easy
 - [canon-jenkins][canon-jenkins] for the base theme
+- [@Heldroe][heldroe] for Fiferox and Microsoft support
 
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
 [google]: https://www.google.com/design/spec/material-design/introduction.html
 [material-design-icons]: https://materialdesignicons.com/
 [stylish]: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
 [canon-jenkins]: https://github.com/rackerlabs/canon-jenkins
+[heldroe]: https://github.com/Heldroe
