@@ -87,10 +87,11 @@ http://afonsof.mit-license.org/
 - [Material Design Icons][material-design-icons] for some extra icons
 - [Stylish][stylish] for making the test of new versions easy
 - [canon-jenkins][canon-jenkins] for the base theme
-- @Heldroe for Fiferox and Microsoft support
+- [@Heldroe][heldroe] for Fiferox and Microsoft support
 
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
 [google]: https://www.google.com/design/spec/material-design/introduction.html
 [material-design-icons]: https://materialdesignicons.com/
 [stylish]: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
 [canon-jenkins]: https://github.com/rackerlabs/canon-jenkins
+[heldroe]: https://github.com/Heldroe
