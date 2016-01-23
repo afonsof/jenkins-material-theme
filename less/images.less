@@ -187,9 +187,24 @@
 [src$='credentials.png'] {
   .icon(@size-xl);
   .icon-img('../images/key.svg', @color-grey);
-  &[style^="width: 24px"] {
+  &[style^="width: 24px"], &[width^="24"] {
     .icon(@size-md);
   }
+}
+
+[src$='user.png'][width^="24"] {
+  .icon(@size-md);
+  .icon-img('../images/ic_people_black.svg', @color-grey);
+}
+
+[src$='notepad.png'][width^="24"] {
+  .icon(@size-md);
+  .icon-img('../images/ic_history_black.svg', @color-grey);
+}
+
+[src$='setting.png'][width^="24"] {
+  .icon(@size-md);
+  .icon-img('../images/ic_settings_black.svg', @color-grey);
 }
 
 [src$='domain.png'] {
