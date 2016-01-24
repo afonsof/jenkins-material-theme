@@ -11,8 +11,9 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 * Multiple ways to install
 
 ## Screenshots
-![Screen 1](images/screen1.png)   ![Screen 2](images/screen2.png)   ![Screen 3](images/screen3.png)
-
+[![Screen 1](images/screen1.png)](images/screen1-lg.png)  
+[![Screen 2](images/screen2.png)](images/screen2-lg.png)  
+[![Screen 3](images/screen3.png)](images/screen3-lg.png)
 
 ## Installation 
 
