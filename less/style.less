@@ -31,16 +31,15 @@ a, a:hover, a:visited, a:link {
 }
 
 .task-link[href='/'] {
-  display: none;
+  display: inline;
 }
 
 .task-icon-link[href='/'] {
-  position: fixed;
-  top: 12px;
-  left: 20px;
+  position: relative;
+  display: inline-block;
   background-color: @color-link;
   height: 40px;
-  width: 170px;
+  width: auto;
   z-index: 1100;
 
   &:hover {
