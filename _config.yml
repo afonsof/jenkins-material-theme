@@ -17,3 +17,5 @@ github_url: "https://github.com/afonsof/jenkins-material-theme"
 
 # Build settings
 markdown: kramdown
+
+exclude: [node_modules, package.json, npm-debug.log, Gruntfile.js, scss]
