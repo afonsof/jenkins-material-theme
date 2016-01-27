@@ -12,7 +12,7 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 * Multiple ways to install
 
 ## Screenshots
-[![Screen 1](images/screen1.png)](images/screen1-lg.png)  [![Screen 2](images/screen2.png)](images/screen2-lg.png)  [![Screen 3](images/screen3.png)](images/screen3-lg.png) 
+[![Screenshot jenkins-material-theme main](images/screenshot-jenkins-material-theme-main.png)](images/screenshot-jenkins-material-theme-main-large.png)      [![Screenshot jenkins-material-theme legend](images/screenshot-jenkins-material-theme-legend.png)](images/screenshot-jenkins-material-theme-legend-large.png)      [![Screenshot jenkins-material-theme console](images/screenshot-jenkins-material-theme-console.png)](images/screenshot-jenkins-material-theme-console-large.png)
 
 
 ## Installation 
