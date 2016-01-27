@@ -1,8 +1,10 @@
 module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
+    var pkg = grunt.file.readJSON('package.json');
+
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+
 
         clean: {
             dist: {
@@ -57,11 +59,28 @@ module.exports = function (grunt) {
                 }]
             }
 
+        },
+
+        replace: {
+            dist: {
+                options: {
+                    patterns: [
+                        {
+                            match: 'version',
+                            replacement: pkg.version
+                        }
+                    ]
+                },
+                files: [
+                    {src: ['dist/material-light.css'], dest: 'dist/material-light.css'},
+                    {src: ['dist/material-dracula.css'], dest: 'dist/material-dracula.css'}
+                ]
+            }
         }
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'less', 'imageEmbed', 'cssmin']);
+    grunt.registerTask('default', ['clean', 'less', 'imageEmbed', 'replace', 'cssmin']);
 
 
 };
