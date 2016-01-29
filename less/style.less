@@ -213,13 +213,27 @@ table.progress-bar {
 
 }
 
-.console-output, .console-output * {
+.console-output, .console-output *, .CodeMirror {
   position: relative;
   font-family: "Courier New", Courier, monospace !important;
   font-size: 14px;
   background: @color-black;
   color: @color-white;
   cursor: text;
+}
+
+.CodeMirror pre {
+  font-family: "Courier New", Courier, monospace !important;
+  line-height: 20px !important;
+  .cm-builtin {
+    color: @color-green;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace !important;
+  }
+}
+
+.CodeMirror-cursor{
+ border-color: @color-white !important;
 }
 
 .console-output {
