@@ -1,7 +1,7 @@
 @import 'variables';
 
 .icon-img(@url, @icon-color) {
-  @encoded-default: escape("#000000");
+  @encoded-default: escape("#333");
   @encoded-white: escape(@icon-color);
   @url-new: replace("@{url}", "url\('(.+)'\)", '$1');
   @data-uri: data-uri("image/svg+xml;charset=UTF-8", '@{url-new}');

@@ -80,7 +80,7 @@ module.exports = function (grunt) {
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'less', 'imageEmbed', 'replace', 'cssmin']);
+    grunt.registerTask('default', ['clean', 'less', 'imagemin', 'imageEmbed', 'replace', 'cssmin']);
 
 
 };
