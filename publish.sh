@@ -24,3 +24,5 @@ fi
 git add dist/
 git commit -m "version $VERSION"
 git push origin gh-pages
+
+git checkout master
