@@ -14,7 +14,7 @@ git checkout gh-pages
 rm -rf dist
 mv $FOLDER ./dist
 
-read -p "Are you sure? " -n 1 -r
+read -p "\nYou are going to publish the version $VERSION. Are you sure (y/n)? " -n 1 -r
 echo
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
