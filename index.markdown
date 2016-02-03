@@ -3,7 +3,7 @@ layout: default
 ---
 
 So you love **Jenkins** but hate its ugly user interface and icons... Me too! Introducing **Jenkins Material Theme**.
-You can turn your favorite frog CI tool into a handsome prince in few steps!   
+You can turn your favorite frog CI tool into a handsome prince in few steps! Install this Jenkins Theme!  
  
 ## Features
 * Just one small css file (35K)
@@ -11,7 +11,7 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 * Multiple ways to install
 
 ## Screenshots
-[![Screenshot jenkins-material-theme main](images/screenshot-jenkins-material-theme-main.png)](images/screenshot-jenkins-material-theme-main-large.png)      [![Screenshot jenkins-material-theme legend](images/screenshot-jenkins-material-theme-legend.png)](images/screenshot-jenkins-material-theme-legend-large.png)      [![Screenshot jenkins-material-theme console](images/screenshot-jenkins-material-theme-console.png)](images/screenshot-jenkins-material-theme-console-large.png)
+[![Screenshot jenkins-theme-material main](images/screenshot-jenkins-theme-material-main.png)](images/screenshot-jenkins-theme-material-main-large.png)      [![Screenshot jenkins-theme-material legend](images/screenshot-jenkins-theme-material-legend.png)](images/screenshot-jenkins-theme-material-legend-large.png)      [![Screenshot jenkins-theme-material console](images/screenshot-jenkins-theme-material-console.png)](images/screenshot-jenkins-theme-material-console-large.png)
 
 ## Installation 
 
@@ -85,7 +85,7 @@ http://afonsof.mit-license.org/
 - [Material Design Icons][material-design-icons] for some extra icons
 - [Stylish][stylish] for making the test of new versions easy
 - [canon-jenkins][canon-jenkins] for the base theme
-- [@Heldroe][heldroe] for Fiferox and Microsoft support
+- [@Heldroe][heldroe] for Firefox and Microsoft support
 
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
 [google]: https://www.google.com/design/spec/material-design/introduction.html
