@@ -1,0 +1,136 @@
+@import "variables";
+
+.CodeMirror {
+  background-color: @console-black !important;
+  color: @console-white !important;
+  font-size: 14px;
+  cursor: text;
+}
+
+.CodeMirror * {
+  font-family: monospace !important;
+}
+
+.CodeMirror pre {
+  line-height: 20px !important;
+}
+
+.CodeMirror-gutters {
+  background: @color-black !important;
+  color: @console-green !important;
+  border: none;
+}
+
+.CodeMirror-guttermarker, .CodeMirror-guttermarker-subtle, .CodeMirror-linenumber {
+  color: @console-green !important;
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid @console-white !important;
+}
+
+div.CodeMirror-selected {
+  background: @console-selection !important;
+}
+
+.CodeMirror-focused div.CodeMirror-selected {
+  background: @console-selection !important;
+}
+
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection {
+  background: @console-selection !important;
+}
+
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection {
+  background: @console-selection !important;
+}
+
+.CodeMirror-activeline-background {
+  background: @console-black !important;
+}
+
+.cm-keyword {
+  color: @console-purple !important;
+}
+
+.cm-operator {
+  color: @color-white !important;
+}
+
+.cm-variable-2 {
+  color: @console-light-green !important;
+}
+
+.cm-variable-3 {
+  color: @console-blue !important;
+}
+
+.cm-builtin {
+  color: @console-yellow !important;
+}
+
+.cm-atom {
+  color: @console-red !important;
+}
+
+.cm-number {
+  color: @console-red !important;
+}
+
+.cm-def {
+  color: @console-white !important;
+}
+
+.cm-string {
+  color: @console-yellow !important;
+}
+
+.cm-string-2 {
+  color: @console-light-green !important;
+}
+
+.cm-comment {
+  color: @console-green !important;
+}
+
+.cm-variable {
+  color: @console-blue !important;
+}
+
+.cm-tag {
+  color: @console-light-green !important;
+}
+
+.cm-meta {
+  color: @console-light-green !important;
+}
+
+.cm-attribute {
+  color: @console-yellow !important;
+}
+
+.cm-property {
+  color: @console-light-green !important;
+}
+
+.cm-qualifier {
+  color: @console-yellow !important;
+}
+
+.cm-variable-3 {
+  color: @console-yellow !important;
+}
+
+.cm-tag {
+  color: @console-red !important;
+}
+
+.cm-error {
+  color: @console-white !important;
+  background-color: @console-red !important;
+}
+
+.CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: @console-white !important;
+}
