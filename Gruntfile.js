@@ -16,7 +16,8 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     "dist/material-light.css": "less/style.less",
-                    "dist/material-dracula.css": "less/dracula.less"
+                    "dist/material-dracula.css": "less/dracula.less",
+                    "dist/material-static.css": "less/static.less"
                 }
             }
         },
@@ -35,6 +36,13 @@ module.exports = function (grunt) {
                 options: {
                     deleteAfterEncoding: false
                 }
+            },
+            static: {
+                src: ["dist/material-static.css"],
+                dest: "dist/material-static.css",
+                options: {
+                    deleteAfterEncoding: false
+                }
             }
         },
 
@@ -42,7 +50,8 @@ module.exports = function (grunt) {
             minify: {
                 files: {
                     'dist/material-light.css': ['dist/material-light.css'],
-                    'dist/material-dracula.css': ['dist/material-dracula.css']
+                    'dist/material-dracula.css': ['dist/material-dracula.css'],
+                    'dist/material-static.css': ['dist/material-static.css']
                 }
             }
         },
@@ -73,7 +82,8 @@ module.exports = function (grunt) {
                 },
                 files: [
                     {src: ['dist/material-light.css'], dest: 'dist/material-light.css'},
-                    {src: ['dist/material-dracula.css'], dest: 'dist/material-dracula.css'}
+                    {src: ['dist/material-dracula.css'], dest: 'dist/material-dracula.css'},
+                    {src: ['dist/material-static.css'], dest: 'dist/material-static.css'}
                 ]
             }
         }
