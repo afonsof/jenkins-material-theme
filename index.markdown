@@ -66,11 +66,17 @@ This will generate the following file:
 
 ## Compatibility
 - Simple Theme plugin 0.3
+
 - Jenkins 1.636
+
 - Firefox 3.5+
+
 - Chrome 4+
+
 - Safari 4+
+
 - Opera 15+
+
 - Microsoft IE11 and Edge
 
 
@@ -81,10 +87,15 @@ http://afonsof.mit-license.org/
 
 ##Thanks to
 - [Simple Theme Plugin][simple] for the Simple Theme plugin
+
 - [Google][google] for the the material design inspiration and the icons
+
 - [Material Design Icons][material-design-icons] for some extra icons
+
 - [Stylish][stylish] for making the test of new versions easy
+
 - [canon-jenkins][canon-jenkins] for the base theme
+
 - [@Heldroe][heldroe] for Firefox and Microsoft support
 
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
