@@ -66,20 +66,29 @@
   .icon-img('../images/play_circle_outline.svg', @color-grey);
 }
 
-.icon-new-package {
+.icon-new-package, [src$='new-package.png'] {
   .icon-img('../images/add_circle_outline.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
-.icon-user {
+.icon-user, [src$='user.png'] {
   .icon-img('../images/people.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
 .icon-notepad {
   .icon-img('../images/history.svg', @color-grey);
 }
 
-.icon-setting {
+.icon-setting, [src$='setting.png'] {
   .icon-img('../images/settings.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
 .icon-up {
@@ -90,8 +99,11 @@
   .icon-img('../images/delete.svg', @color-grey);
 }
 
-.icon-fingerprint {
+.icon-fingerprint, [src$='fingerprint.png'] {
   .icon-img('../images/fingerprint.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
 .icon-graph {
@@ -106,28 +118,46 @@
   .icon-img('../images/expand_more.svg', @color-grey);
 }
 
-.icon-help {
+.icon-help, [src$='help.png'] {
   .icon-img('../images/help_outline.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
-.icon-secure {
+.icon-secure, [src$='secure.png'] {
   .icon-img('../images/lock.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
-.icon-plugin {
+.icon-plugin, [src$='plugin.png'] {
   .icon-img('../images/extension.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
-.icon-system-log-out {
+.icon-system-log-out, [src$='system-log-out.png'] {
   .icon-img('../images/power_settings_new.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
-.icon-refresh {
+.icon-refresh, [src$='refresh.png'] {
   .icon-img('../images/refresh.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
-.icon-computer {
+.icon-computer, [src$='computer.png'] {
   .icon-img('../images/computer.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
 .icon-computer-x {
@@ -138,20 +168,32 @@
   .icon-img('../images/computer_new.svg', @color-grey);
 }
 
-.icon-clipboard {
+.icon-clipboard, [src$='clipboard.png'] {
   .icon-img('../images/assignment.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
-.icon-monitor {
+.icon-monitor, [src$='monitor.png'] {
   .icon-img('../images/chart-areaspline.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
-.icon-terminal, [src$='24x24/terminal.png'] {
+.icon-terminal, [src$='terminal.png'] {
   .icon-img('../images/console.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
-.icon-network {
+.icon-network, [src$='network.png'] {
   .icon-img('../images/server-network.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
 .icon-document, .icon-text {
@@ -178,12 +220,18 @@
   .icon-img('../images/save.svg', @color-grey);
 }
 
-.icon-package {
+.icon-package, [src$='package.gif'] {
   .icon-img('../images/package-down.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
-.icon-search {
+.icon-search, [src$='search.png'] {
   .icon-img('../images/info_outline.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
 .icon-stop {
@@ -198,24 +246,16 @@
 [src$='credentials.png'] {
   .icon(@size-xl);
   .icon-img('../images/key.svg', @color-grey);
-  &[style^="width: 24px"], &[width^="24"] {
+  &[style^="width: 24px"], &[width="24"] {
     .icon(@size-md);
   }
 }
 
-[src$='user.png'][width^="24"] {
-  .icon(@size-md);
-  .icon-img('../images/people.svg', @color-grey);
-}
-
-[src$='notepad.png'][width^="24"] {
-  .icon(@size-md);
+[src$='notepad.png'] {
   .icon-img('../images/history.svg', @color-grey);
-}
-
-[src$='setting.png'][width^="24"] {
-  .icon(@size-md);
-  .icon-img('../images/settings.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
 [src$='domain.png'] {
@@ -226,8 +266,11 @@
   }
 }
 
-#description-link img, .icon-gear {
+#description-link img, .icon-gear, [src$='gear.png'] {
   .icon-img('../images/pencil.svg', @color-grey);
+  &[width="24"] {
+    .icon(@size-md);
+  }
 }
 
 [src$='24x24/terminal.png'] {
