@@ -23,14 +23,14 @@ You can turn your favorite frog CI tool into a handsome prince in few steps! Ins
 
 1. Click `Configure System` and scroll down to `Theme`
 
-1. Specify the URL for `http://afonsof.github.io/jenkins-material-theme/dist/material-light.css`.
+1. Specify the URL for `http://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-light.css`.
 
 1. Click `Save`
 
 
 ### Using your Jenkins Hosting
 
-1. Upload the file `http://afonsof.github.io/jenkins-material-theme/dist/material-light.css` to your web server
+1. Upload the file `http://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-light.css` to your web server
 
 1. Follow the steps of the previous method using your uploaded file as URL in step 4
 
@@ -39,7 +39,7 @@ You can turn your favorite frog CI tool into a handsome prince in few steps! Ins
 
 1. Install the [Stylish Chrome extension][stylish]
 
-1. Copy the content of the file `http://afonsof.github.io/jenkins-material-theme/dist/material-light.css`
+1. Copy the content of the file `http://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-light.css`
 
 1. Go to Stylish options and click in `Write new style`
 
