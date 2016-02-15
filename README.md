@@ -41,7 +41,7 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 
 1. Install the [Stylish Chrome extension][stylish]
 
-1. Copy the content of the file `http://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-light.css`
+1. Copy the content of the file http://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-light.css
 
 1. Go to Stylish options and click in `Write new style`
 
