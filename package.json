@@ -17,6 +17,8 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "cssnano": "^3.5.2",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^3.0.3",
     "grunt-contrib-clean": "^0.5.0",
@@ -27,12 +29,14 @@
     "grunt-contrib-less": "^1.1.0",
     "grunt-contrib-uglify": "^0.2.7",
     "grunt-image-embed": "^0.3.3",
+    "grunt-postcss": "^0.7.2",
     "grunt-replace": "^0.11.0",
     "grunt-rev": "^0.1.0",
     "imagemin-svgo": "^4.2.0",
     "install": "^0.3.0",
     "jenkins-core-theme": "^1.1.12",
     "load-grunt-tasks": "^3.3.0",
-    "npm": "^3.4.1"
+    "npm": "^3.4.1",
+    "pixrem": "^3.0.0"
   }
 }

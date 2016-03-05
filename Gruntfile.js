@@ -76,11 +76,24 @@ module.exports = function (grunt) {
                     {src: ['dist/material-static.css'], dest: 'dist/material-static.css'}
                 ]
             }
+        },
+        postcss: {
+            options: {
+                map: false,
+                processors: [
+                    //require('pixrem')(), // add fallbacks for rem units
+                    //require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+                    require('cssnano')() // minify the result
+                ]
+            },
+            dist: {
+                src: 'dist/material*.css'
+            }
         }
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'less', 'imagemin', 'imageEmbed', 'replace', 'cssmin']);
+    grunt.registerTask('default', ['clean', 'less', 'imagemin', 'imageEmbed', 'replace', 'cssmin', 'postcss']);
 
 
 };
