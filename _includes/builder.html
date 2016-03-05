@@ -1,0 +1,83 @@
+<style>
+    #filePicker {
+        font-size: 12px;
+        width: 300px;
+        height: 40px;
+    }
+
+    #filePicker::-webkit-file-upload-button {
+        visibility: hidden;
+    }
+
+    #filePicker::before {
+        display: inline-block;
+        margin-bottom: 1rem;
+        color: rgba(255, 255, 255, 0.7);
+        background-color: #26a69a;
+        transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        font-size: 12px;
+        padding: 0.75rem 1rem;
+        border-radius: 1px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        text-transform: uppercase;
+
+        content: 'Select your company logo...';
+        -webkit-user-select: none;
+        cursor: pointer;
+    }
+</style>
+
+
+<h2>New: Use Material Theme with your company logo!</h2>
+
+<h3>Choose your company logo</h3>
+<ul>
+    <li>Minimum height: 40px</li>
+    <li>Preferred type: Transparent PNG</li>
+    <li>Preferred size: up to 10KB</li>
+</ul>
+<input type="file" id="filePicker">
+<a style="display:none; background-color: #26a69a" href="" class="btn" id="download"
+   download="jenkins-material-theme.css">↓ &nbsp;Download your theme!</a>
+
+
+<script>
+    var originalCss;
+    var newCssPrefix = "#header{background-image: url('data:image/png;base64,";
+    var newCssSuffix = "');background-repeat:no-repeat;" +
+            "background-size: auto 40px, cover;" +
+            "background-position: 10px 10px;}" +
+            "#jenkins-home-link{display:none !important}";
+
+    var orignalCssRequest = new XMLHttpRequest();
+    orignalCssRequest.onload = function () {
+        originalCss = this.responseText;
+    };
+    orignalCssRequest.open("get", "dist/material-light.css", true);
+    orignalCssRequest.send();
+
+    var onFileChange = function (changeEvent) {
+        if (!changeEvent.target.files) return;
+
+        var reader = new FileReader();
+        reader.onload = function (readerEvent) {
+            var imageBase64 = btoa(readerEvent.target.result);
+            var newCss = originalCss + newCssPrefix + imageBase64 + newCssSuffix;
+            document.getElementById('download').href = "data:application/octet-stream;base64," + btoa(newCss);
+            document.getElementById('download').style.display = 'inline';
+            document.getElementById('filePicker').style.display = 'none';
+        };
+
+        reader.readAsBinaryString(changeEvent.target.files[0]);
+
+    };
+
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
+        document.getElementById('filePicker').addEventListener('change', onFileChange, false);
+    } else {
+        alert('The File APIs are not fully supported in this browser.');
+    }
+</script>
