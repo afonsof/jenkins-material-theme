@@ -32,7 +32,7 @@ a, a:hover, a:visited, a:link {
 }
 
 .task-icon-link[href='/'] {
-  position: fixed;
+  position: absolute;
   top: 12px;
   left: 20px;
   background-color: @color-link;
@@ -50,7 +50,6 @@ a, a:hover, a:visited, a:link {
   height: 64px;
   background-color: @color-primary;
   text-transform: uppercase;
-  position: fixed;
   right: 0;
   left: 0;
   top: 0;
@@ -74,12 +73,9 @@ a, a:hover, a:visited, a:link {
 }
 
 #breadcrumbBar {
-  margin-top: 65px;
-
   #breadcrumbs {
     border: none !important;
   }
-
 }
 
 #breadcrumb-menu[style*='top: -27px;'] {
