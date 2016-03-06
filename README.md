@@ -10,6 +10,7 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 * Just one small css file (35K)
 * Embed minified SVG images
 * Multiple ways to install
+* Use your own Company logo with the [generator][generator]
 
 ## Screenshots
 [![Screenshot jenkins-material-theme main](images/screenshot-jenkins-material-theme-main.png)](images/screenshot-jenkins-material-theme-main-large.png)      [![Screenshot jenkins-material-theme legend](images/screenshot-jenkins-material-theme-legend.png)](images/screenshot-jenkins-material-theme-legend-large.png)      [![Screenshot jenkins-material-theme console](images/screenshot-jenkins-material-theme-console.png)](images/screenshot-jenkins-material-theme-console-large.png)
@@ -95,3 +96,4 @@ http://afonsof.mit-license.org/
 [stylish]: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
 [canon-jenkins]: https://github.com/rackerlabs/canon-jenkins
 [heldroe]: https://github.com/Heldroe
+[generator]: http://jenkins-contrib-themes.github.io/jenkins-material-theme
