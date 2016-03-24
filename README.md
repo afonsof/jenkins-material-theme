@@ -89,6 +89,7 @@ http://afonsof.mit-license.org/
 - [Stylish][stylish] for making the test of new versions easy
 - [canon-jenkins][canon-jenkins] for the base theme
 - [@Heldroe][heldroe] for Firefox and Microsoft support
+- [@bootstraponline][bootstraponline] for Jenkins native plugin
 
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
 [google]: https://www.google.com/design/spec/material-design/introduction.html
@@ -97,3 +98,4 @@ http://afonsof.mit-license.org/
 [canon-jenkins]: https://github.com/rackerlabs/canon-jenkins
 [heldroe]: https://github.com/Heldroe
 [generator]: http://jenkins-contrib-themes.github.io/jenkins-material-theme
+[bootstraponline]: https://github.com/bootstraponline

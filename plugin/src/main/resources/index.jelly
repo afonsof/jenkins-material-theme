@@ -3,5 +3,5 @@
 -->
 <?jelly escape-by-default='true'?>
 <div>
-  Adds Neo Light theme to Jenkins using bundled CSS. Useful for Jenkins that don't allow custom CSS.
+  Changes Jenkins theme to Material Design Theme.
 </div>

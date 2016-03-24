@@ -12,14 +12,14 @@
   <version>0.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
-  <name>Neo Light Plugin</name>
-  <url>https://github.com/bootstraponline/neo_light_plugin</url>
+  <name>Jenkins Material Theme Plugin</name>
+  <url>https://github.com/jenkins-contrib-themes/jenkins-material-theme</url>
 
   <developers>
     <developer>
-      <id>bootstraponline</id>
-      <name>bootstraponline</name>
-      <email>code@bootstraponline.com</email>
+      <id>afonsof</id>
+      <name>Afonso F</name>
+      <email>afonso.franca@gmail.com</email>
     </developer>
   </developers>
 
