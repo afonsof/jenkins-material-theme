@@ -2,6 +2,10 @@
 
 set -e
 
+grunt
+mkdir -p plugin/src/main/webapp
+cp dist/* plugin/src/main/webapp/
+
 cd plugin
 rm -rf target
 mvn package

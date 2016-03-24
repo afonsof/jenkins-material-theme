@@ -68,12 +68,17 @@ module.exports = function (grunt) {
                         {
                             match: 'version',
                             replacement: pkg.version
+                        },
+                        {
+                            match: /material-theme<\/artifactId>\s+<version>[^>]*<\/version>/g,
+                            replacement: 'material-theme</artifactId>\n    <version>' + pkg.version + '</version>'
                         }
                     ]
                 },
                 files: [
                     {src: ['dist/material-light.css'], dest: 'dist/material-light.css'},
-                    {src: ['dist/material-static.css'], dest: 'dist/material-static.css'}
+                    {src: ['dist/material-static.css'], dest: 'dist/material-static.css'},
+                    {src: ['plugin/pom.xml'], dest: 'plugin/pom.xml'}
                 ]
             }
         },

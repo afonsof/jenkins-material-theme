@@ -1,39 +1,40 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>org.jenkins-ci.plugins</groupId>
-    <artifactId>plugin</artifactId>
-    <version>1.642.2</version>
-  </parent>
+    <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>plugin</artifactId>
+        <version>1.642.2</version>
+    </parent>
 
-  <groupId>com.afonsof.material-theme</groupId>
-  <artifactId>material-theme</artifactId>
-  <version>1.2.1</version>
-  <packaging>hpi</packaging>
+    <groupId>com.afonsof.material-theme</groupId>
+    <artifactId>material-theme</artifactId>
+    <version>1.2.1</version>
+    <packaging>hpi</packaging>
 
-  <name>Material Design Theme Plugin</name>
-  <url>https://github.com/jenkins-contrib-themes/jenkins-material-theme</url>
+    <name>Material Design Theme Plugin</name>
+    <url>https://github.com/jenkins-contrib-themes/jenkins-material-theme</url>
 
-  <developers>
-    <developer>
-      <id>afonsof</id>
-      <name>Afonso F</name>
-      <email>afonso.franca@gmail.com</email>
-    </developer>
-  </developers>
+    <developers>
+        <developer>
+            <id>afonsof</id>
+            <name>Afonso F</name>
+            <email>afonso.franca@gmail.com</email>
+        </developer>
+    </developers>
 
-  <repositories>
-    <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
-    </pluginRepository>
-  </pluginRepositories>
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>
