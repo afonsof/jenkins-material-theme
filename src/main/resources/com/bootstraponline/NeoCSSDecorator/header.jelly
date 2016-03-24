@@ -1,5 +1,3 @@
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-  <j:if test="${it.getCssUrl() != null}">
-    <link type="text/css" rel="stylesheet" href="${it.getCssUrl()}" />
-  </j:if>
+  <link type="text/css" rel="stylesheet" href="plugin/neo_light_plugin/neo-light.css" />
 </j:jelly>

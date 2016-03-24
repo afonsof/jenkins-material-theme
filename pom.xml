@@ -4,22 +4,22 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.563</version>
+    <version>1.642.2</version>
   </parent>
 
-  <groupId>org.cloudbees.jenkins.simplecssplugin</groupId>
-  <artifactId>simple-css-plugin</artifactId>
+  <groupId>com.bootstraponline.neo_light_plugin</groupId>
+  <artifactId>neo_light_plugin</artifactId>
   <version>0.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
-  <name>Simple CSS Plugin</name>
-  <url>http://github.com/cloudbees/simple-css-plugin</url>
+  <name>Neo Light Plugin</name>
+  <url>https://github.com/bootstraponline/neo_light_plugin</url>
 
   <developers>
     <developer>
-      <id>michaelneale</id>
-      <name>michaelneale</name>
-      <email>michael.neale@gmail.com</email>
+      <id>bootstraponline</id>
+      <name>bootstraponline</name>
+      <email>code@bootstraponline.com</email>
     </developer>
   </developers>
 

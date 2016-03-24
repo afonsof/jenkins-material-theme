@@ -2,5 +2,5 @@
   This view is used to render the installed plugins page.
 -->
 <div>
-  Add custom CSS only (no javascript).
+  Adds Neo Light theme to Jenkins using bundled CSS. Useful for Jenkins that don't allow custom CSS.
 </div>

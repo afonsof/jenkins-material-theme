@@ -1,21 +1,11 @@
-Simple CSS Plugin for Jenkins
+Neo Light Plugin for Jenkins
 ==============================
-A plugin for Jenkins that supports custom CSS.
-This was lifted from https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
+Adds Neo Light theme to Jenkins using bundled CSS. Useful for Jenkins that don't allow custom CSS.
 
-This is almost the same thing - but only supports CSS injection. JS injection in
-some cases is a security risk - which is why I made this one for those environments.
-
-
-Examples
+Credits
 ------------------------------
-There is a great example <a href="https://github.com/hawkfalcon/jenkins-clean-theme/">here</a>
-You can also point it to this one: 	
-	
-		https://s3.amazonaws.com/cloudbees-downloads/jenkins-styles/blue-ish.css
-
-Which is an adaptation with custom icons and more.
-
+Based on https://github.com/cloudbees/simple-css-plugin
+Theme from https://github.com/jenkins-contrib-themes/jenkins-neo-theme
 
 
 Author
