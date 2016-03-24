@@ -6,6 +6,7 @@
 
 * {
   font-family: 'Roboto', sans-serif !important;
+  outline: none;
 }
 
 body, table, form, td, th, p {
@@ -245,4 +246,16 @@ pre {
 .left-bar {
   top: 27px !important;
   left: 16px !important;
+}
+
+.yuimenuitem-selected {
+  background-color: @color-primary !important;
+  & > a {
+    color: @color-white !important;
+
+    & > img {
+      -webkit-filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1);
+    }
+  }
 }
