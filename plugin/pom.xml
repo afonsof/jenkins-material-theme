@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>plugin</artifactId>
+    <version>1.642.2</version>
+  </parent>
+
+  <groupId>com.bootstraponline.neo_light_plugin</groupId>
+  <artifactId>neo_light_plugin</artifactId>
+  <version>0.1-SNAPSHOT</version>
+  <packaging>hpi</packaging>
+
+  <name>Neo Light Plugin</name>
+  <url>https://github.com/bootstraponline/neo_light_plugin</url>
+
+  <developers>
+    <developer>
+      <id>bootstraponline</id>
+      <name>bootstraponline</name>
+      <email>code@bootstraponline.com</email>
+    </developer>
+  </developers>
+
+  <repositories>
+    <repository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+</project>
