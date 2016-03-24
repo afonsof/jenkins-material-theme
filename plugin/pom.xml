@@ -7,12 +7,12 @@
     <version>1.642.2</version>
   </parent>
 
-  <groupId>com.bootstraponline.neo_light_plugin</groupId>
-  <artifactId>neo_light_plugin</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <groupId>com.afonsof.material-theme</groupId>
+  <artifactId>material-theme</artifactId>
+  <version>1.2.1</version>
   <packaging>hpi</packaging>
 
-  <name>Jenkins Material Theme Plugin</name>
+  <name>Material Design Theme Plugin</name>
   <url>https://github.com/jenkins-contrib-themes/jenkins-material-theme</url>
 
   <developers>
