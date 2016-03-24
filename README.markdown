@@ -6,8 +6,8 @@ Adds Neo Light theme to Jenkins using bundled CSS. Useful for Jenkins that don't
 
 Credits
 ------------------------------
-Based on https://github.com/cloudbees/simple-css-plugin
-Theme from https://github.com/jenkins-contrib-themes/jenkins-neo-theme
+- Based on https://github.com/cloudbees/simple-css-plugin
+- Theme from https://github.com/jenkins-contrib-themes/jenkins-neo-theme
 
 
 Author
