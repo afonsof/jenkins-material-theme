@@ -15,7 +15,7 @@ You can turn your favorite frog CI tool into a handsome prince in few steps! Ins
 
 ## Installation 
 
-### Using this GitHub page (recommended)
+### Using this GitHub page (recommended) (auto-updated)
 
 1. Install [Jenkins Simple Theme Plugin][simple]
 
@@ -28,11 +28,17 @@ You can turn your favorite frog CI tool into a handsome prince in few steps! Ins
 1. Click `Save`
 
 
-### Using your Jenkins Hosting
+### Using the Native Jenkins Plugin
 
-1. Upload the file `http://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-light.css` to your web server
+1. Download the file https://github.com/jenkins-contrib-themes/jenkins-material-theme/raw/master/hpi/material-theme.hpi
 
-1. Follow the steps of the previous method using your uploaded file as URL in step 4
+1. Go to `Manage Jenkins > Plugins > Advanced`
+
+1. Select the downloaded file in the area `Upload Plugin`
+
+1. Click `Upload`
+
+1. Restart your Jenkins Server
 
 
 ### Using Stylish (only you will be able to see the awesome theme)
