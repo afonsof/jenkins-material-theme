@@ -2,7 +2,7 @@ Neo Light Plugin for Jenkins
 ==============================
 Adds Neo Light theme to Jenkins using bundled CSS. Useful for Jenkins that don't allow custom CSS.
 
-![](neo_light_hero_image.png]
+![](neo_light_hero_image.png)
 
 Credits
 ------------------------------
