@@ -49,13 +49,52 @@ module.exports = function (grunt) {
         imagemin: {
             dynamic: {
                 options: {
-                    svgoPlugins: [{removeViewBox: true}]
+                    svgoPlugins: [{
+                        removeViewBox: true,
+                        removeDoctype: true,
+                        removeXMLProcInst: true,
+                        removeComments: true,
+                        removeMetadata: true,
+                        removeTitle: true,
+                        removeDesc: true,
+                        removeUselessDefs: true,
+                        removeEditorsNSData: true,
+                        removeEmptyAttrs: true,
+                        removeHiddenElems: true,
+                        removeEmptyText: true,
+                        removeEmptyContainers: true,
+                        removeViewBox: true,
+                        cleanUpEnableBackground: true,
+                        minifyStyles: true,
+                        convertStyleToAttrs: true,
+                        convertColors: true,
+                        convertPathData: true,
+                        convertTransform: true,
+                        removeUnknownsAndDefaults: true,
+                        removeNonInheritableGroupAttrs: true,
+                        removeUselessStrokeAndFill: true,
+                        removeUnusedNS: true,
+                        cleanupIDs: true,
+                        cleanupNumericValues: true,
+                        moveElemsAttrsToGroup: true,
+                        moveGroupAttrsToElems: true,
+                        collapseGroups: true,
+                        removeRasterImages: true,
+                        mergePaths: true,
+                        convertShapeToPath: true,
+                        sortAttrs: true,
+                        transformsWithOnePath: true,
+                        removeDimensions: true,
+                        removeAttrs: true,
+                        addClassesToSVGElement: true,
+                        removeStyleElement: true
+                    }]
                 },
                 files: [{
                     expand: true,
-                    cwd: 'images/',
+                    cwd: 'node_modules/jenkins-core-theme/images/',
                     src: ['**/*.svg'],
-                    dest: 'images/'
+                    dest: 'node_modules/jenkins-core-theme/images/'
                 }]
             }
 
@@ -86,8 +125,8 @@ module.exports = function (grunt) {
             options: {
                 map: false,
                 processors: [
-                    //require('pixrem')(), // add fallbacks for rem units
-                    //require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+                    require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+                    require('postcss-encode-base64-inlined-images'),
                     require('cssnano')() // minify the result
                 ]
             },
@@ -98,7 +137,7 @@ module.exports = function (grunt) {
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'less', 'imagemin', 'imageEmbed', 'replace', 'cssmin', 'postcss']);
+    grunt.registerTask('default', ['clean', 'imagemin', 'less', 'replace', 'cssmin', 'postcss']);
 
 
 };

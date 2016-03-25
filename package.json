@@ -34,9 +34,11 @@
     "grunt-rev": "^0.1.0",
     "imagemin-svgo": "^4.2.0",
     "install": "^0.3.0",
-    "jenkins-core-theme": "^1.1.31",
+    "jenkins-core-theme": "^1.1.38",
     "load-grunt-tasks": "^3.3.0",
     "npm": "^3.4.1",
-    "pixrem": "^3.0.0"
-  }
+    "pixrem": "^3.0.0",
+    "postcss-encode-base64-inlined-images": "0.0.1"
+  },
+  "dependencies": {}
 }
