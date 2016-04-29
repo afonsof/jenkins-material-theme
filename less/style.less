@@ -3,8 +3,9 @@
 @import '../node_modules/jenkins-core-theme/less/images';
 @import '../node_modules/jenkins-core-theme/less/codemirror';
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
 
-* {
+:not(div.ace_content) {
   font-family: 'Roboto', sans-serif !important;
   outline: none;
 }
@@ -209,7 +210,7 @@ table.progress-bar {
 
 .console-output, .console-output * {
   position: relative;
-  font-family: monospace !important;
+  font-family: 'Roboto Mono', monospace !important;
   font-size: 14px;
   background: @console-black;
   color: @console-white;
@@ -218,6 +219,10 @@ table.progress-bar {
 
 .console-output {
   padding: 10px 20px;
+}
+
+.ace_content {
+  font: 12px/normal 'Roboto Mono', monospace;
 }
 
 [style^="color:gray"] {
