@@ -34,7 +34,7 @@ a, a:hover, a:visited, a:link {
 }
 
 .task-icon-link[href='/'] {
-  position: absolute;
+  float: left;
   top: 12px;
   left: 20px;
   background-color: @color-link;
@@ -45,6 +45,10 @@ a, a:hover, a:visited, a:link {
   &:hover {
     opacity: 1 !important;
   }
+}
+
+.task {
+  clear: both;
 }
 
 #header {
