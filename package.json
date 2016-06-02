@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/afonsof/jenkins-material-theme"
   },
+  "scripts": {
+    "test": "grunt"
+  },
   "keywords": [
     "material design",
     "jenkins"
