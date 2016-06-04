@@ -15,39 +15,45 @@ You can turn your favorite frog CI tool into a handsome prince in few steps! Ins
 [![Screenshot jenkins-material-theme history](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-history.png)](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-history-large.png)
 
 
+
 ## Installation 
 
 ### Using this GitHub page (recommended) (auto-updated)
 
-1. Install [Jenkins Simple Theme Plugin][simple]
+1. Choose your color:
+![image](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/pallete.png)
 
-1. Click `Manage Jenkins`
+2. Replace `{{your-color-name}}` in the URL by the chosen color: `https://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-{{your-color-name}}.css`
 
-1. Click `Configure System` and scroll down to `Theme`
+3. Install [Jenkins Simple Theme Plugin][simple]
 
-1. Specify the URL for `https://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-light.css`.
+4. Click `Manage Jenkins`
 
-1. Click `Save`
+5. Click `Configure System` and scroll down to `Theme`
+
+6. Set the CSS field to the generated URL.
+
+7. Click `Save`
 
 
-### Using the Native Jenkins Plugin
+### Using your Jenkins Hosting
 
-1. Download the file https://github.com/jenkins-contrib-themes/jenkins-material-theme/raw/master/hpi/material-theme.hpi
+1. Follow the step 1 and 2 of the previous method
 
-1. Go to `Manage Jenkins > Plugins > Advanced`
+2. Download the generated URL
 
-1. Select the downloaded file in the area `Upload Plugin`
+3. Upload the downloaded file to your web server
 
-1. Click `Upload`
-
-1. Restart your Jenkins Server
+4. Follow the steps 3 to 7 of the previous method using your uploaded file as URL in step 6
 
 
 ### Using Stylish (only you will be able to see the awesome theme)
 
-1. Install the [Stylish Chrome extension][stylish]
+1. Follow the step 1 and 2 of the previous method
 
-1. Copy the content of the file `https://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-light.css`
+1. Copy the content of the file downloaded file
+
+1. Install the [Stylish Chrome extension][stylish]
 
 1. Go to Stylish options and click in `Write new style`
 
@@ -57,7 +63,7 @@ You can turn your favorite frog CI tool into a handsome prince in few steps! Ins
 
 1. Click in `Save`
 
-1. Go to your Jenkins website and enable the theme in the Stylish Chrome t  oolbar icon
+1. Go to your Jenkins website and enable the theme in the Stylish Chrome toolbar icon
 
 
 ## Development
