@@ -65,7 +65,7 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 
 1. Click in `Save`
 
-1. Go to your Jenkins website and enable the theme in the Stylish Chrome t  oolbar icon
+1. Go to your Jenkins website and enable the theme in the Stylish Chrome toolbar icon
 
 
 ## Development
