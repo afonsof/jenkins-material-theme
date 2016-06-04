@@ -14,7 +14,8 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 * Customize the color and logo using the [generator][generator]
 
 ## Screenshots
-[![Screenshot jenkins-material-theme main](images/screenshot-jenkins-material-theme-main.png)](images/screenshot-jenkins-material-theme-main-large.png)      [![Screenshot jenkins-material-theme legend](images/screenshot-jenkins-material-theme-legend.png)](images/screenshot-jenkins-material-theme-legend-large.png)      [![Screenshot jenkins-material-theme console](images/screenshot-jenkins-material-theme-console.png)](images/screenshot-jenkins-material-theme-console-large.png)
+[![Screenshot jenkins-material-theme main](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-main.png)](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-main-large.png)      [![Screenshot jenkins-material-theme legend](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-legend.png)](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-legend-large.png) [![Screenshot jenkins-material-theme console](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-console.png)](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-console-large.png)
+[![Screenshot jenkins-material-theme history](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-history.png)](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-history-large.png)
 
 
 ## Installation 
