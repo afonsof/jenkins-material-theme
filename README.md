@@ -21,15 +21,18 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 
 ### Using this GitHub page (recommended) (auto-updated)
 
+1. Choose your color:
+![image](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/pallete.png)
+
+1. Replace your color name in the url: `https://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-{{your-color-name}}.css`
+
 1. Install [Jenkins Simple Theme Plugin][simple]
 
 1. Click `Manage Jenkins`
 
 1. Click `Configure System` and scroll down to `Theme`
 
-1. Choose your color: 
-
-1. Specify the URL for `https://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-light.css`.
+1. Set the CSS field to the generated URL.
 
 1. Click `Save`
 
