@@ -1,3 +1,4 @@
+![image](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/logo.svg)
 # jenkins-material-theme [![Build Status](https://travis-ci.org/jenkins-contrib-themes/jenkins-material-theme.svg?branch=master)](https://travis-ci.org/jenkins-contrib-themes/jenkins-material-theme)
 Beautify your Jenkins with the Material Design theme!
 
