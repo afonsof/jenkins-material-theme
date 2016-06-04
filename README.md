@@ -12,7 +12,6 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 * Embed minified SVG images
 * Multiple ways to install
 * Customize the color and logo using the [generator][generator]
-![image](https://cloud.githubusercontent.com/assets/805511/15797868/9f5aaa56-29f3-11e6-835d-75c327043fe4.png)
 
 ## Screenshots
 [![Screenshot jenkins-material-theme main](images/screenshot-jenkins-material-theme-main.png)](images/screenshot-jenkins-material-theme-main-large.png)      [![Screenshot jenkins-material-theme legend](images/screenshot-jenkins-material-theme-legend.png)](images/screenshot-jenkins-material-theme-legend-large.png)      [![Screenshot jenkins-material-theme console](images/screenshot-jenkins-material-theme-console.png)](images/screenshot-jenkins-material-theme-console-large.png)
@@ -27,6 +26,8 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 1. Click `Manage Jenkins`
 
 1. Click `Configure System` and scroll down to `Theme`
+
+1. Choose your color: 
 
 1. Specify the URL for `https://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-light.css`.
 
