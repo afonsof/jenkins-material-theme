@@ -10,7 +10,8 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 * Just one small css file (35K)
 * Embed minified SVG images
 * Multiple ways to install
-* Use your own Company logo with the [generator][generator]
+* Customize the color and logo using the [generator][generator]
+![image](https://cloud.githubusercontent.com/assets/805511/15797868/9f5aaa56-29f3-11e6-835d-75c327043fe4.png)
 
 ## Screenshots
 [![Screenshot jenkins-material-theme main](images/screenshot-jenkins-material-theme-main.png)](images/screenshot-jenkins-material-theme-main-large.png)      [![Screenshot jenkins-material-theme legend](images/screenshot-jenkins-material-theme-legend.png)](images/screenshot-jenkins-material-theme-legend-large.png)      [![Screenshot jenkins-material-theme console](images/screenshot-jenkins-material-theme-console.png)](images/screenshot-jenkins-material-theme-console-large.png)
