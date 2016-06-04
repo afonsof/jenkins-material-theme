@@ -29,10 +29,29 @@
         -webkit-user-select: none;
         cursor: pointer;
     }
+
+    #colors {
+        width: 100%;
+    }
+
+    #colors div {
+        width: 120px;
+        height: 40px;
+        padding: 9px;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 3px;
+    }
 </style>
 
 
 <h2>New: Use Material Theme with your company logo!</h2>
+
+<h3>Select your color</h3>
+<div id="colors"></div>
+<div style="clear: both"></div>
 
 <h3>Choose your company logo</h3>
 <ul>
@@ -40,12 +59,56 @@
     <li>Preferred type: Transparent PNG</li>
     <li>Preferred size: up to 10KB</li>
 </ul>
+
 <input type="file" id="filePicker">
 <a style="display:none; background-color: #26a69a" href="" class="btn" id="download"
    download="jenkins-material-theme.css">↓ &nbsp;Download your theme!</a>
 
 
 <script>
+    var colors = {
+        'red': '#F44336',
+        'pink': '#E91E63',
+        'purple': '#9C27B0',
+        'deep-purple': '#673AB7',
+        'indigo': '#3F51B5',
+        'blue': '#2196F3',
+        'light-blue': '#039BE5',
+        'cyan': '#0097A7',
+        'teal': '#26A69A',
+        'green': '#43A047',
+        'light-green': '#689F38',
+        'lime': '#AFB42B',
+        'yellow': '#FBC02D',
+        'amber': '#FF6F00',
+        'orange': '#EF6C00',
+        'deep-orange': '#FF5722',
+        'brown': '#795548',
+        'grey': '#757575',
+        'blue-grey': '#607D8B'
+    };
+
+    var colorElement = document.getElementById('colors');
+    for (var name in colors) {
+        var el = document.createElement('div');
+        el.style.backgroundColor = colors[name];
+        el.style.color = 'white';
+        el.innerHTML = name;
+        if(name =='teal'){
+            el.className = 'selected';
+        }
+        el.onclick = function () {
+            colorElement.childNodes.forEach(function (child) {
+                child.className = '';
+                child.style.display = 'none';
+            });
+            this.className = 'selected';
+            this.style.display = 'block';
+            reloadCss();
+        };
+        colorElement.appendChild(el);
+    }
+
     var originalCss;
     var newCssPrefix = "#header{background-image: url('data:image/png;base64,";
     var newCssSuffix = "');background-repeat:no-repeat;" +
@@ -53,12 +116,14 @@
             "background-position: 10px 10px;}" +
             "#jenkins-home-link{display:none !important}";
 
-    var orignalCssRequest = new XMLHttpRequest();
-    orignalCssRequest.onload = function () {
-        originalCss = this.responseText;
-    };
-    orignalCssRequest.open("get", "dist/material-light.css", true);
-    orignalCssRequest.send();
+    function reloadCss() {
+        var orignalCssRequest = new XMLHttpRequest();
+        orignalCssRequest.onload = function () {
+            originalCss = this.responseText;
+        };
+        orignalCssRequest.open('get', 'dist/material-' + document.getElementsByClassName('selected')[0].innerHTML + '.css', true);
+        orignalCssRequest.send();
+    }
 
     var onFileChange = function (changeEvent) {
         if (!changeEvent.target.files) return;
