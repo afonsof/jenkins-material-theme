@@ -24,7 +24,7 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 1. Choose your color:
 ![image](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/pallete.png)
 
-2. Replace {{your-color-name}} in the URL by the chosen color: `https://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-{{your-color-name}}.css`
+2. Replace `{{your-color-name}}` in the URL by the chosen color: `https://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-{{your-color-name}}.css`
 
 3. Install [Jenkins Simple Theme Plugin][simple]
 
