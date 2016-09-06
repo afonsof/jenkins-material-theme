@@ -2,6 +2,8 @@
 # jenkins-material-theme [![Build Status](https://travis-ci.org/jenkins-contrib-themes/jenkins-material-theme.svg?branch=master)](https://travis-ci.org/jenkins-contrib-themes/jenkins-material-theme)
 Beautify your Jenkins with the Material Design theme!
 
+<a href='https://pledgie.com/campaigns/32522'><img alt='Click here to lend your support to: Jenkins Material Theme and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/32522.png?skin_name=chrome' border='0' ></a>
+
 Website: http://jenkins-contrib-themes.github.io/jenkins-material-theme
 
 So you love **Jenkins** but hate its ugly user interface and icons... Me too! Introducing **Jenkins Material Theme**.
