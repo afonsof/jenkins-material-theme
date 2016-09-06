@@ -4,8 +4,6 @@ layout: default
 
 So you love **Jenkins** but hate its ugly user interface and icons... Me too! Introducing **Jenkins Material Theme**.
 You can turn your favorite frog CI tool into a handsome prince in few steps! Install this Jenkins Theme!
-
-<a href='https://pledgie.com/campaigns/32522'><img alt='Click here to lend your support to: Jenkins Material Theme and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/32522.png?skin_name=chrome' border='0' ></a>
  
 ## Features
 * Just one small css file (35K)
