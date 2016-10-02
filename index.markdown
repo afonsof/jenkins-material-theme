@@ -11,8 +11,8 @@ You can turn your favorite frog CI tool into a handsome prince in few steps! Ins
 * Multiple ways to install
 
 ## Screenshots
-[![Screenshot jenkins-material-theme main](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-main.png)](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-main-large.png)      [![Screenshot jenkins-material-theme legend](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-legend.png)](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-legend-large.png) [![Screenshot jenkins-material-theme console](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-console.png)](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-console-large.png)
-[![Screenshot jenkins-material-theme history](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-history.png)](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/screenshot-jenkins-theme-material-history-large.png)
+[![Screenshot jenkins-material-theme main](http://afonsof.com/jenkins-material-theme/images/screenshot-jenkins-theme-material-main.png)](http://afonsof.com/jenkins-material-theme/images/screenshot-jenkins-theme-material-main-large.png)      [![Screenshot jenkins-material-theme legend](http://afonsof.com/jenkins-material-theme/images/screenshot-jenkins-theme-material-legend.png)](http://afonsof.com/jenkins-material-theme/images/screenshot-jenkins-theme-material-legend-large.png) [![Screenshot jenkins-material-theme console](http://afonsof.com/jenkins-material-theme/images/screenshot-jenkins-theme-material-console.png)](http://afonsof.com/jenkins-material-theme/images/screenshot-jenkins-theme-material-console-large.png)
+[![Screenshot jenkins-material-theme history](http://afonsof.com/jenkins-material-theme/images/screenshot-jenkins-theme-material-history.png)](http://afonsof.com/jenkins-material-theme/images/screenshot-jenkins-theme-material-history-large.png)
 
 
 
@@ -21,9 +21,9 @@ You can turn your favorite frog CI tool into a handsome prince in few steps! Ins
 ### Using this GitHub page (recommended) (auto-updated)
 
 1. Choose your color:
-![image](http://jenkins-contrib-themes.github.io/jenkins-material-theme/images/pallete.png)
+![image](http://afonsof.com/jenkins-material-theme/images/pallete.png)
 
-2. Replace `{{your-color-name}}` in the URL by the chosen color: `https://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-{{your-color-name}}.css`
+2. Replace `{{your-color-name}}` in the URL by the chosen color: `https://afonsof.com/jenkins-material-theme/dist/material-{{your-color-name}}.css`
 
 3. Install [Jenkins Simple Theme Plugin][simple]
 
