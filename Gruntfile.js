@@ -30,6 +30,7 @@ module.exports = function (grunt) {
         "dist/material-light.css": "less/style.less",
         "dist/material-static.css": "less/static.less"
     };
+
     var replaceFiles = [
         {src: ['dist/material-light.css'], dest: 'dist/material-light.css'},
         {src: ['dist/material-static.css'], dest: 'dist/material-static.css'},
@@ -44,7 +45,7 @@ module.exports = function (grunt) {
     for (var name in colors) {
         var color = colors[name];
 
-        fileCreatorTask['.tmp/' + name + '.less'] = new Function ('fs', 'fd', 'done', '{\
+        fileCreatorTask['.tmp/' + name + '.less'] = new Function('fs', 'fd', 'done', '{\
             fs.writeFileSync(fd, \'@import "../less/style";@color-primary:' + color + ';@color-link:' + color + ';\');\
             done();\
         }');
@@ -185,11 +186,17 @@ module.exports = function (grunt) {
                     deleteAfterEncoding: false
                 }
             }
+        },
+
+        fileExists: {
+            scripts: Object.keys(lessFiles)
         }
+
     });
 
     // Default task(s).
     grunt.registerTask('default', ['clean', 'file-creator', 'imagemin', 'less', 'replace', 'cssmin', 'postcss']);
+    grunt.registerTask('test', ['default', 'fileExists']);
 
 
 };
