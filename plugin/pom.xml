@@ -10,7 +10,7 @@
 
     <groupId>com.afonsof.material-theme</groupId>
     <artifactId>material-theme</artifactId>
-    <version>1.2.3</version>
+    <version>1.3.2</version>
     <packaging>hpi</packaging>
 
     <name>Material Design Theme Plugin</name>
