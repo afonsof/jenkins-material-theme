@@ -97,7 +97,7 @@ If you are experiencing issues please let me know! Also, feel free to contribute
 ## License
 http://afonsof.mit-license.org/
 
-##Thanks to
+## Thanks to
 - [Simple Theme Plugin][simple] for the Simple Theme plugin
 - [Google][google] for the the material design inspiration and the icons
 - [Material Design Icons][material-design-icons] for some extra icons
