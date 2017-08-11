@@ -116,6 +116,12 @@ module.exports = function (grunt) {
                     cwd: 'node_modules/jenkins-core-theme/images/',
                     src: ['**/*.svg'],
                     dest: 'node_modules/jenkins-core-theme/images/'
+                },
+                {
+                    expand: true,
+                    cwd: 'images/',
+                    src: ['**/*.svg'],
+                    dest: 'images/'
                 }]
             }
 
