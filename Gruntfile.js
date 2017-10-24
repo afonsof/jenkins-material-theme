@@ -190,12 +190,27 @@ module.exports = function (grunt) {
 
         fileExists: {
             scripts: Object.keys(lessFiles)
-        }
+        },
 
+        concat: {
+            js : {
+                src : [
+                    'js/theme.js'
+                ],
+                dest : 'dist/jenkins-material-theme.js'
+            }
+        },
+        uglify : {
+    js: {
+        files: {
+            'dist/jenkins-material-theme.js' : [ 'dist/jenkins-material-theme.js' ]
+        }
+    }
+}
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'file-creator', 'imagemin', 'less', 'replace', 'cssmin', 'postcss']);
+    grunt.registerTask('default', ['clean', 'file-creator', 'imagemin', 'less', 'replace', 'cssmin', 'postcss', 'concat:js', 'uglify:js']);
     grunt.registerTask('test', ['default', 'fileExists']);
 
 
