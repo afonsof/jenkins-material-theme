@@ -74,13 +74,13 @@ You can turn your favorite frog CI tool into a handsome prince in few steps!
 
 CSS file are minified and compressed with Grunt. To prepare the environment:
 
-```
+```js
 npm install
-grunt
+npm test
 ```
 
-This will generate the following file:
-- dist/material-light.css
+This will generate multiples css files into /dist folder, each with one of the available color palette themes:
+- dist/material-{{color-name}}.css
 
 ## Compatibility
 - Simple Theme plugin 0.3
