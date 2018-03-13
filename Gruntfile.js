@@ -22,7 +22,8 @@ module.exports = function (grunt) {
         'deep-orange': '#FF5722',
         'brown': '#795548',
         'grey': '#757575',
-        'blue-grey': '#607D8B'
+        'blue-grey': '#607D8B',
+        'fuel': '#002d5b'
     };
 
     var fileCreatorTask = {};
@@ -116,6 +117,12 @@ module.exports = function (grunt) {
                     cwd: 'node_modules/jenkins-core-theme/images/',
                     src: ['**/*.svg'],
                     dest: 'node_modules/jenkins-core-theme/images/'
+                },
+                {
+                    expand: true,
+                    cwd: 'images/',
+                    src: ['**/*.svg'],
+                    dest: 'images/'
                 }]
             }
 
@@ -191,12 +198,9 @@ module.exports = function (grunt) {
         fileExists: {
             scripts: Object.keys(lessFiles)
         }
-
     });
 
     // Default task(s).
     grunt.registerTask('default', ['clean', 'file-creator', 'imagemin', 'less', 'replace', 'cssmin', 'postcss']);
     grunt.registerTask('test', ['default', 'fileExists']);
-
-
 };
