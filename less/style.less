@@ -149,6 +149,16 @@ th.pane {
   }
 }
 
+@media all and (max-width: 576px) {
+  #projectstatus th:nth-last-child(-n+5) {
+    display: none;
+  }
+
+  #projectstatus td:nth-last-child(-n+5) {
+    display: none;
+  }
+}
+
 #projectstatus .healthReportDetails table tbody tr td {
     background-color: @color-white !important;
     color: @color-text !important;
